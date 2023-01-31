@@ -16,9 +16,8 @@ db = client['ThirtyDays']['Challenges']
 
 
 @app.get("/")
-async def get_featured_challenges():
-    # get the 3 challenges with the most joiners
-    return db.find().sort("joiners", -1).limit(3)
+def get_featured_challenges():
+    return {"message": "Welcome to Thirty Days"}
 
 # ----------------------------------------- #
 # browse page
@@ -65,7 +64,7 @@ def create_challenge():
     challenge: dict = {
         "challenge_id": "123",
         "created_by": "123",
-        
+
     }
     # create a number of days based on challenge duration
     days = [
