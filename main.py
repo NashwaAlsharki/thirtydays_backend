@@ -7,8 +7,8 @@ app = FastAPI()
 
 # connect to mongo database
 load_dotenv()
-DATABASE_URI = os.environ.get('DATABASE_URI')
-client = pymongo.MongoClient(DATABASE_URI)
+MONGODB_URI = os.environ.get('MONGODB_URI')
+client = pymongo.MongoClient(MONGODB_URI)
 db = client['ThirtyDays']['Challenges']
 
 # ----------------------------------------- #
