@@ -1,121 +1,125 @@
+from models import ChallengeModel, UpdateChallengeModel, ExcerciseModel
+from fastapi import FastAPI, status, HTTPException, Body
+from motor.motor_asyncio import AsyncIOMotorClient
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
-from fastapi import FastAPI
-import pymongo
+from typing import List
 import os
 
-app = FastAPI()
-
-# connect to mongo database
+# ---------- connect to mongo database ---------- #
 load_dotenv()
 MONGODB_URI = os.environ.get('MONGODB_URI')
-client = pymongo.MongoClient(MONGODB_URI)
-db = client['ThirtyDays']['Challenges']
+client = AsyncIOMotorClient(MONGODB_URI)
+db = client.ThirtyDays
 
-# ----------------------------------------- #
-# home page
 
+# ---------- create FASTAPI app ---------- #
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# -------------- home page routes --------------- #
 
 @app.get("/")
-def get_featured_challenges():
+def success_message():
     return {"message": "Welcome to Thirty Days"}
 
-# ----------------------------------------- #
-# browse page
+# ----------- browse page routes ------------ #
+
+# get all challenges
+
+@app.get("/challenges", response_description="List all challenges", response_model=List[ChallengeModel])
+async def list_challenges():
+    challenges = await db["Challenges"].find().to_list(1000)
+    return challenges
+
+# ----------- challenge page routes ----------- #
+
+@app.get("/challenge/{id}", response_description="Get a single challenge", response_model=ChallengeModel)
+async def show_challenge(id: str):
+    if (challenge := await db["Challenges"].find_one({"_id": id})) is not None:
+        return challenge
+
+    raise HTTPException(status_code=404, detail=f"Challenge {id} not found")
 
 
-@app.get("/browse")
-async def get_challenges(keyword: str, category: str, duration: int):
-    # check if any of the filters are applied then query filters
-    query = {}
-    if keyword:
-        query["keyword"] = keyword
-    if category:
-        query["category"] = category
-    if duration:
-        query["duration"] = duration
-
-    return db.find(query)
-
-# ----------------------------------------- #
-# challenge page
+@app.patch("/challenge/{id}/join")
+async def join_challenge(id: str):
+    challenge = await db["Challenges"].find_one({"_id": id})
+    joiners = challenge["joiners"]
+    joiners += 1
+    await db["Challenges"].update_one({"_id": id}, {"$set": {"joiners": joiners}})
+    return challenge
 
 
-@app.get("/challenge/{challenge_id}")
-async def get_challenge(challenge_id: str):
-    return challenges.find_one({"challenge_id": challenge_id})
+# ----------- day page routes ----------- #
 
-
-@app.get("/challenge/{challenge_id}/day/{day}")
-async def get_challenge_day(challenge_id: str, day: int):
+@app.get("/challenge/{id}/day/{day}")
+async def get_challenge_day(id: str, day: int):
     return db.find_one({"challenge_id": challenge_id, "day": day})
 
+# ----------- excercise page routes ----------- #
 
-@app.patch("/challenge/{challenge_id}/join")
-def join_challenge(challenge_id: str, user_id: str):
-    # add user to challnege joiners list
-    return db.update_one({"challenge_id": challenge_id}, {"$push": {"joiners": user_id}})
-
-# ----------------------------------------- #
-# create challenge page
+@app.get("/excercise/{id}", response_description="Get a single excercise", response_model=ExcerciseModel)
+async def show_excercise(id: str):
+    return db.find_one({"_id": id})
 
 
-@app.post("/create")
-def create_challenge():
-    challenge: dict = {
-        "challenge_id": "123",
-        "created_by": "123",
-
-    }
-    # create a number of days based on challenge duration
-    days = [
-        {
-            "id": i+1,
-            "description": "",
-            "excercises": []
-        }
-        for i in range(challenge["duration"])
-    ]
-    challenge["days"] = days
-
-    return db.insert_one(challenge)
+# -------------- create challenge page routes --------------- #
 
 
-@app.patch("/create/{challenge_id}")
-def update_challenge_details(challenge_id: str, challenge: dict):
-    # check if duration has been updated
-    before_update = db.test.find_one({"challenge_id": challenge_id})
-    duration_change = challenge["duration"] - before_update["duration"]
-    if duration_change != 0:
-        # add or remove modules based on duration change
-        if duration_change > 0:
-            # add modules
-            days = [
-                {
-                    "id": i+1,
-                    "description": "",
-                    "excercises": []
-                }
-                for i in range(before_update["duration"], challenge["duration"])
-            ]
-            challenge["days"] += days
-        else:
-            # remove modules
-            challenge["days"] = challenge["days"][:duration_change]
+@app.post("/challenge", response_description="Create a new challenge", response_model=ChallengeModel)
+async def create_challenge(challenge: ChallengeModel = Body(...)):
+    challenge = jsonable_encoder(challenge)
+    new_challenge = await db["Challenges"].insert_one(challenge)
+    created_challenge = await db["Challenges"].find_one({"_id": new_challenge.inserted_id})
+    return JSONResponse(status_code=status.HTTP_201_CREATED, content=created_challenge)
 
-    return db.update_one({"challenge_id": challenge_id}, {"$set": challenge})
+@app.put("/challenge/{id}", response_description="Update a challenge", response_model=ChallengeModel)
+async def update_challenge(id: str, challenge: UpdateChallengeModel = Body(...)):
+    challenge = {k: v for k, v in challenge.dict().items() if v is not None}
+
+    if len(challenge) >= 1:
+        update_result = await db["Challenges"].update_one({"_id": id}, {"$set": challenge})
+
+        if update_result.modified_count == 1:
+            if (update_challenge := await db['Challenges'].find_one({"_id": id})) is not None:
+                return update_challenge
+                
+    if (existing_challenge := await db["Challenges"].find_one({"_id": id})) is not None:
+        return existing_challenge
+    
+    raise HTTPException(status_code=404, detail=f"Challenge {id} not found")
 
 
-@app.patch("/create/{challenge_id}/day/{day_id}")
+@app.delete("/challenge/{id}", response_description="Delete a challenge")
+async def delete_challenge(id: str):
+    delete_result = await db["Challenges"].delete_one({"_id": id})
+
+    if delete_result.deleted_count == 1:
+        return JSONResponse(status_code=status.HTTP_204_NO_CONTENT)
+    
+    raise HTTPException(status_code=404, detail=f"Challenge {id} not found")
+
+
+@app.patch("/challenge/{challenge_id}/day/{day_id}")
 async def save_challenge_day(challenge_id: str, day_id: int, day: dict):
     return db.update_one({"challenge_id": challenge_id, "day.id": day_id}, {"$set": day})
 
 
-@app.patch("/create/{challenge_id}/day/{day_id}")
+@app.patch("/challenge/{challenge_id}/day/{day_id}")
 def add_excercise_to_day(challenge_id: str, day_id: int, excercise: dict):
     return db.update_one({"challenge_id": challenge_id, "day.id": day_id}, {"$push": {"day.excercises": excercise}})
 
-# ----------------------------------------- #
-# dashboard page
+# ------------- dashboard page routes --------------- #
 
 
 @app.get("/dashboard")
