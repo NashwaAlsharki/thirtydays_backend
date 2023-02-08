@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 from datetime import datetime
 from bson import ObjectId
 
+
 class PyObjectId(ObjectId):
     @classmethod
     def __get_validators__(cls):
@@ -17,63 +18,9 @@ class PyObjectId(ObjectId):
     def __modify_schema__(cls, field_schema):
         field_schema.update(type='string')
 
-# create test model
-
-class TestModel(BaseModel):
-    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    name: str
-    description: str
-    days: list[dict]
-
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
-
-class UpdateTestModel(BaseModel):
-    name: str
-    description: str
-    days: list[dict]
-
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
-
-# challenge model
-
-class ChallengeModel(BaseModel):
-    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    created_by: str
-    title: str
-    description: str
-    image_url: str
-    categories: list[str]
-    duration: int
-    days: list[dict]
-    joiners: int
-
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
-
-class UpdateChallengeModel(BaseModel):
-    created_by: str
-    title: str
-    description: str
-    image_url: str
-    categories: list[str]
-    duration: int
-    days: list
-    joiners: int
-
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
-
 # create excercise model
+
+
 class ExerciseModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
     title: str
@@ -85,6 +32,65 @@ class ExerciseModel(BaseModel):
     steps: list[str]
     tips: list[str]
     image_urls: list[str]
+
+    class Config:
+        allow_population_by_field_name = True
+        arbitrary_types_allowed = True
+        json_encoders = {ObjectId: str}
+
+
+# create day model
+class DayModel(BaseModel):
+    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
+    day: int
+    title: str
+    exercises: list[dict]
+
+    class Config:
+        allow_population_by_field_name = True
+        arbitrary_types_allowed = True
+        json_encoders = {ObjectId: str}
+
+
+class UpdateDayModel(BaseModel):
+    day: int
+    title: str
+    exercises: list[dict]
+
+    class Config:
+        allow_population_by_field_name = True
+        arbitrary_types_allowed = True
+        json_encoders = {ObjectId: str}
+
+# create challenge model
+
+
+class ChallengeModel(BaseModel):
+    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
+    created_by: str
+    title: str
+    description: str
+    image_url: str
+    categories: list[str]
+    duration: int
+    days: list[DayModel]
+    joiners: int
+
+    class Config:
+        allow_population_by_field_name = True
+        arbitrary_types_allowed = True
+        json_encoders = {ObjectId: str}
+
+
+class UpdateChallengeModel(BaseModel):
+    created_by: str
+    title: str
+    description: str
+    image_url: str
+    categories: list[str]
+    duration: int
+    days: list[DayModel]
+    joiners: int
 
     class Config:
         allow_population_by_field_name = True

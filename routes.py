@@ -1,6 +1,6 @@
 from models import ChallengeModel, UpdateChallengeModel, ExerciseModel
 from main import app, challenges_db, exercises_db
-from fastapi import status, HTTPException, Body, Query
+from fastapi import status, HTTPException, Body
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from typing import List
@@ -13,36 +13,33 @@ from typing import List
 def success_message():
     return {"message": "Welcome to Thirty Days"}
 
-# ----------- browse page routes ------------ #
+# ----------- challenge routes ----------- #
 
-# get all challenges
-
-
-@app.get("/challenges", response_description="List all challenges", response_model=List[ChallengeModel])
-async def list_challenges():
-    challenges = await challenges_db.find().to_list(1000)
-    return challenges
+# get all challenges or filter by keyword, category, duration, or all three
 
 
-# filter challenges by keyword, category, duration, or all three
-@app.get("/challenges", response_description="Filter challenges", response_model=List[ChallengeModel])
-async def filter_challenges(keywords: str, categories: list[str], durations: list[int]):
-    challenges = await challenges_db.find().to_list(1000)
-    filtered_challenges = []
-    for challenge in challenges:
-        if keywords in challenge["title"] or keywords in challenge['description']:
-            filtered_challenges.append(challenge)
-    return filtered_challenges
+@app.get("/challenges", response_description="List challenges", response_model=List[ChallengeModel])
+async def list_challenges(keyword: str = None, duration: int = None, category: str = None):
+    query = {}
+    if keyword:
+        query = {"$or": [{"title": {"$regex": keyword, "$options": "i"}}, {
+            "description": {"$regex": keyword, "$options": "i"}}]}
+    if duration:
+        query["duration"] = duration
+    if category:
+        query["categories"] = {"$in": [category]}
 
+    if (challenges := await challenges_db.find(query).to_list(1000)):
+        return challenges
 
-# ----------- challenge page routes ----------- #
+    raise HTTPException(status_code=404, detail="No challenges found")
 
 # get a single challenge
 
 
 @app.get("/challenges/{id}", response_description="Get a single challenge", response_model=ChallengeModel)
 async def show_challenge(id: str):
-    if (challenge := await challenges_db.find_one({"_id": id})) is not None:
+    if (challenge := await challenges_db.find_one({"_id": id})):
         return challenge
 
     raise HTTPException(status_code=404, detail=f"Challenge {id} not found")
@@ -59,34 +56,21 @@ async def join_challenge(id: str):
     return challenge
 
 
-# ----------- day page routes ----------- #
+# ----------- excercise routes ----------- #
 
-# get a single day
-
-@app.get("/challenges/{id}/day/{day}")
-async def show_challenge_day(id: str, day: int):
-    return db.find_one({"challenge_id": challenge_id, "day": day})
-
-# ----------- excercise page routes ----------- #
-
-# get all excercises
-
-
-@app.get("/exercises", response_description="List all excercises", response_model=List[ExerciseModel])
-async def list_excercises():
-    excercises = await exercises_db.find().to_list(10)
-    return excercises
-
-# filter excercises by primary/secondary muscle group
-
+# get all excercises with filters for primary and secondary muscle groups
 
 @app.get("/exercises", response_description="Filter excercises", response_model=List[ExerciseModel])
-async def filter_excercises(muscle: str = Query(None)):
+async def filter_excercises(muscle: str = None):
     query = {}
     if muscle:
-        query = {"primary": muscle}
-    exercises = [x for x in exercises_db.find(query)]
-    return exercises
+        query = {"$or": [{"primary": muscle},
+                         {"secondary": {"$in": [muscle]}}]}
+    
+    if (excercises := await exercises_db.find(query).to_list(10)):
+        return excercises
+    
+    raise HTTPException(status_code=404, detail="No excercises found")
 
 # get a single excercise
 
@@ -99,7 +83,7 @@ async def show_excercise(id: str):
     raise HTTPException(status_code=404, detail=f"Excercise {id} not found")
 
 
-# -------------- create challenge page routes --------------- #
+# -------------- create challenge routes --------------- #
 
 # create a challenge
 @app.post("/challenges", response_description="Create a new challenge", response_model=ChallengeModel)
@@ -140,10 +124,24 @@ async def delete_challenge(id: str):
 
     raise HTTPException(status_code=404, detail=f"Challenge {id} not found")
 
-# -------------- create day page routes --------------- #
+# --------------  day  routes --------------- #
 
-# create a day
+# add update challenge days (send a list of days)
 
+@app.put("/challenges/{id}/day", response_description="Update challenge days", response_model=ChallengeModel)
+async def update_challenge_days(id: str, days: list[dict]):
+    updated_challenge = await challenges_db.update_one({"_id": id}, {"$set": {"days": days}})
+    if updated_challenge.modified_count == 1:
+        return await challenges_db.find_one({"_id": id})
+
+    raise HTTPException(status_code=404, detail=f"Challenge {id} not found")
+
+
+# get a single day
+
+@app.get("/challenges/{id}/day/{day}")
+async def show_challenge_day(id: str, day: int):
+    return db.find_one({"challenge_id": challenge_id, "day": day})
 
 # add an excercise to a day
 
