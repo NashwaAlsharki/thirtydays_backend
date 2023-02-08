@@ -7,7 +7,7 @@
       "title": "Bench Press",
       "url": "http://db.everkinetic.com/exercise/bench-press",
       "primer": "This is an exercise for the chest.",
-      "type": "compound",
+      "style": "compound",
       "primary": "chest",
       "secondary": [
         "triceps"
@@ -41,7 +41,7 @@
       "title": "Tate Press",
       "url": "http://db.everkinetic.com/exercise/tate-press",
       "primer": "This is an advanced triceps exercise which moves the muscle differently than other exercises.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -69,7 +69,7 @@
       "title": "Static Neck Flexion and Extension",
       "url": "http://db.everkinetic.com/exercise/static-neck-flexion-extension",
       "primer": "An exercise to either build or warm-up front and back neck strength.",
-      "type": "isometric",
+      "style": "isometric",
       "primary": "neck extensors, neck flexors",
       "equipment": [
         "body"
@@ -99,7 +99,7 @@
       "title": "Static Neck Side Flexion",
       "url": "http://db.everkinetic.com/exercise/static-neck-side-flexion",
       "primer": "An exercise either build or warm up neck side flexors.",
-      "type": "isometric",
+      "style": "isometric",
       "primary": "neck side flexors",
       "equipment": [
         "body"
@@ -130,7 +130,7 @@
       "title": "Seated Shoulder Press Machine",
       "url": "http://db.everkinetic.com/exercise/seated-shoulder-press-machine",
       "primer": "This is an exercise for the shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "triceps"
@@ -163,7 +163,7 @@
       "title": "Seated Military Press",
       "url": "http://db.everkinetic.com/exercise/seated-military-press",
       "primer": "An exercise for the shoulder and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "triceps"
@@ -199,7 +199,7 @@
       "title": "Shoulder Shrugs",
       "url": "http://db.everkinetic.com/exercise/shoulder-shrugs",
       "primer": "An exercise for trapezius strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "trapezius",
       "equipment": [
         "dumbbell"
@@ -231,7 +231,7 @@
       "title": "Arnold Press",
       "url": "http://db.everkinetic.com/exercise/arnold-press",
       "primer": "An exercise for shoulder and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "triceps"
@@ -268,7 +268,7 @@
       "title": "Front Barbell Raises",
       "url": "http://db.everkinetic.com/exercise/front-barbell-raises",
       "primer": "An exercise for shoulder, chest and forearm strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "chest",
@@ -304,7 +304,7 @@
       "title": "Front Cable Raises",
       "url": "http://db.everkinetic.com/exercise/front-cable-raises",
       "primer": "An exercise for shoulders, chest and forearm strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "chest",
@@ -342,7 +342,7 @@
       "title": "Cable Shoulder Shrugs",
       "url": "http://db.everkinetic.com/exercise/cable-shoulder-shrugs",
       "primer": "An exercise for trapezius strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "trapezius",
       "secondary": [
         "shoulders"
@@ -377,7 +377,7 @@
       "title": "Front Raises",
       "url": "http://db.everkinetic.com/exercise/front-raises",
       "primer": "This is an exercise for shoulder, chest and forearm strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "forearm",
@@ -414,7 +414,7 @@
       "title": "Seated Barbell Shoulder Press",
       "url": "http://db.everkinetic.com/exercise/barbell-shoulder-press",
       "primer": "This is an exercise for shoulder, chest and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "triceps",
@@ -449,7 +449,7 @@
       "title": "Dumbbell Shoulder Press",
       "url": "http://db.everkinetic.com/exercise/dumbbell-shoulder-press",
       "primer": "An exercise for shoulder, chest and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "triceps",
@@ -483,7 +483,7 @@
       "title": "Smith Machine Upright Row",
       "url": "http://db.everkinetic.com/exercise/smith-machine-upright-row",
       "primer": "This is an exercise for shoulder and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "biceps",
@@ -519,7 +519,7 @@
       "title": "Upright Barbell Rows",
       "url": "http://db.everkinetic.com/exercise/upright-barbell-rows",
       "primer": "This is an exercise for shoulder, biceps and upper back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "biceps",
@@ -556,7 +556,7 @@
       "title": "Upright Cable Row",
       "url": "http://db.everkinetic.com/exercise/upright-cable-row",
       "primer": "This is an exercise for shoulder, biceps and upper back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "upper back",
@@ -593,7 +593,7 @@
       "title": "Dumbbell Upright Rows",
       "url": "http://db.everkinetic.com/exercise/dumbbell-upright-rows",
       "primer": "This is an exercise for shoulder, biceps and upper back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "biceps",
@@ -632,7 +632,7 @@
       "title": "Bent-over Lateral Cable Raises",
       "url": "http://db.everkinetic.com/exercise/bent-over-lateral-cable-raises",
       "primer": "This is an exercise for shoulder, trapezius and middle back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "trapezius",
@@ -670,7 +670,7 @@
       "title": "Lateral Dumbbell Raises",
       "url": "http://db.everkinetic.com/exercise/lateral-dumbbell-raises",
       "primer": "This is an exercise for lateral deltoid, shoulder and forearm strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lateral deltoid",
       "secondary": [
         "forearm",
@@ -707,7 +707,7 @@
       "title": "Ball Wall Circles",
       "url": "http://db.everkinetic.com/exercise/ball-wall-circles",
       "primer": "This is an exercise to strengthen and stretch the rotator cuff muscles or shoulder muscles.",
-      "type": "compound",
+      "style": "compound",
       "primary": "shoulders",
       "secondary": [
         "biceps",
@@ -744,7 +744,7 @@
       "title": "Back Fly's with Exercise Band",
       "url": "http://db.everkinetic.com/exercise/back-flys-exercise-band",
       "primer": "This is an exercise for shoulder, middle back and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "triceps",
@@ -781,7 +781,7 @@
       "title": "Flat Bench Leg Raises",
       "url": "http://db.everkinetic.com/exercise/flat-bench-leg-raises",
       "primer": "This is an exercise for lower abdominal strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower abdominals",
       "equipment": [
         "body"
@@ -815,7 +815,7 @@
       "title": "Smith Machine Rear Deltoid Row",
       "url": "http://db.everkinetic.com/exercise/smith-machine-rear-deltoid-row",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "rear deltoid",
       "secondary": [
         "back",
@@ -855,7 +855,7 @@
       "title": "Lying Rear Lateral Raise",
       "url": "http://db.everkinetic.com/exercise/lying-rear-lateral-raise",
       "primer": "This is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "equipment": [
         "flat bench",
@@ -886,7 +886,7 @@
       "title": "Rear Deltoid Row Dumbbell",
       "url": "http://db.everkinetic.com/exercise/rear-deltoid-row-dumbbell",
       "primer": "This is an exercise for deltoid, biceps and trapezius strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "posterior deltoid",
       "secondary": [
         "lateral deltoid",
@@ -925,7 +925,7 @@
       "title": "Seated Cable Rows",
       "url": "http://db.everkinetic.com/exercise/seated-cable-rows",
       "primer": "This is an exercise for middle back, biceps and lower back strengthening.",
-      "type": "compound",
+      "style": "compound",
       "primary": "middle back",
       "secondary": [
         "biceps",
@@ -961,7 +961,7 @@
       "title": "Reverse Grips Bent Over Barbell Rows",
       "url": "http://db.everkinetic.com/exercise/reverse-grips-bent-over-barbell-rows",
       "primer": "This is an exercise for middle back and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "middle back",
       "secondary": [
         "biceps"
@@ -996,7 +996,7 @@
       "title": "Stationary Abdominal Draw In",
       "url": "http://db.everkinetic.com/exercise/stationary-abdominal-draw-in",
       "primer": "This is an exercise for abdominal and core strengthening which are vital in supporting the spine.",
-      "type": "isometric",
+      "style": "isometric",
       "primary": "abdominals",
       "secondary": [
         "core"
@@ -1031,7 +1031,7 @@
       "title": "Rear Deltoid Row Barbell",
       "url": "http://db.everkinetic.com/exercise/rear-deltoid-row-barbell",
       "primer": "This is an exercise for shoulder and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "biceps"
@@ -1064,7 +1064,7 @@
       "title": "T-Bar Rows",
       "url": "http://db.everkinetic.com/exercise/t-bar-rows",
       "primer": "This is an exercise for middle back, biceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "middle back",
       "secondary": [
         "biceps",
@@ -1101,7 +1101,7 @@
       "title": "Barbell Shrugs",
       "url": "http://db.everkinetic.com/exercise/barbell-shrugs",
       "primer": "This is an exercise for trapezius strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "trapezius",
       "equipment": [
         "barbell"
@@ -1134,7 +1134,7 @@
       "title": "Incline Shoulder Press Dumbbell",
       "url": "http://db.everkinetic.com/exercise/incline-shoulder-press-dumbbell",
       "primer": "This is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "equipment": [
         "dumbbell"
@@ -1162,7 +1162,7 @@
       "title": "Bent Over Rear Deltoid Raise With Head On Bench",
       "url": "http://db.everkinetic.com/exercise/bent-over-rear-deltoid-raise-with-head-on-bench",
       "primer": "This is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "equipment": [
         "dumbbells"
@@ -1194,7 +1194,7 @@
       "title": "Front Dumbbell Raise",
       "url": "http://db.everkinetic.com/exercise/front-dumbbell-raise",
       "primer": "This is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "equipment": [
         "dumbbells"
@@ -1222,7 +1222,7 @@
       "title": "Internal Cable Rotation",
       "url": "http://db.everkinetic.com/exercise/internal-cable-rotation",
       "primer": "This is an exercise for shoulder and biceps strengthening.",
-      "type": "compound",
+      "style": "compound",
       "primary": "shoulders",
       "secondary": [
         "biceps"
@@ -1257,7 +1257,7 @@
       "title": "Seated Rear Lateral Cable Raise",
       "url": "http://db.everkinetic.com/exercise/seated-rear-lateral-cable-raise",
       "primer": "Tis is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "equipment": [
         "cable machine"
@@ -1286,7 +1286,7 @@
       "title": "Cuban Dumbbell Press",
       "url": "http://db.everkinetic.com/exercise/cuban-dumbbell-press",
       "primer": "This is a three point exercise for shoulder and middle back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "middle back"
@@ -1325,7 +1325,7 @@
       "title": "Lying One Arm Rear Lateral Raise",
       "url": "http://db.everkinetic.com/exercise/lying-one-arm-rear-lateral-raise",
       "primer": "This is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "equipment": [
         "dumbbell",
@@ -1359,7 +1359,7 @@
       "title": "One Arm Dumbbell Shoulder Press",
       "url": "http://db.everkinetic.com/exercise/one-arm-dumbbell-shoulder-press",
       "primer": "This is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "triceps",
@@ -1392,7 +1392,7 @@
       "title": "One Arm Upright Row",
       "url": "http://db.everkinetic.com/exercise/one-arm-upright-row",
       "primer": "This is an exercise for shoulder and trapezius strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "trapezius"
@@ -1424,7 +1424,7 @@
       "title": "Dumbbell Raise",
       "url": "http://db.everkinetic.com/exercise/dumbbell-raise",
       "primer": "This is an exercise for shoulder and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "biceps"
@@ -1456,7 +1456,7 @@
       "title": "Smith Machine Shoulder Shrugs",
       "url": "http://db.everkinetic.com/exercise/smith-machine-shoulder-shrugs",
       "primer": "This is an exercise for shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "equipment": [
         "smith machine"
@@ -1485,7 +1485,7 @@
       "title": "Incline Bench Press",
       "url": "http://db.everkinetic.com/exercise/incline-bench-press",
       "primer": "This is an exercise for chest and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps"
@@ -1522,7 +1522,7 @@
       "title": "Incline Bench Press with Bands",
       "url": "http://db.everkinetic.com/exercise/incline-bench-press-with-bands",
       "primer": "This is an exercise for chest and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "biceps"
@@ -1555,7 +1555,7 @@
       "title": "Bent Arm Pullover",
       "url": "http://db.everkinetic.com/exercise/bent-arm-pullover",
       "primer": "This is an exercise for chest, triceps, shoulders and lats strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "lats",
@@ -1590,7 +1590,7 @@
       "title": "Dumbbell Bent Arm Pullover",
       "url": "http://db.everkinetic.com/exercise/dumbbell-bent-arm-pullover",
       "primer": "This is an exercise for chest, shoulder, lats and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -1625,7 +1625,7 @@
       "title": "Butterfly Machine",
       "url": "http://db.everkinetic.com/exercise/butterfly-machine",
       "primer": "This is an exercise for chest strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "equipment": [
         "butterfly machine"
@@ -1655,7 +1655,7 @@
       "title": "Cable Crossover",
       "url": "http://db.everkinetic.com/exercise/cable-crossover",
       "primer": "This is an exercise for chest and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders"
@@ -1687,7 +1687,7 @@
       "title": "Close Grip Barbell Bench Press",
       "url": "http://db.everkinetic.com/exercise/close-grip-barbell-bench-press",
       "primer": "This is an exercise for chest, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -1721,7 +1721,7 @@
       "title": "Crossover with Bands",
       "url": "http://db.everkinetic.com/exercise/crossover-bands",
       "primer": "This is an exercise for chest, biceps and shoulder strengthening",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -1758,7 +1758,7 @@
       "title": "Decline Barbell Bench Press",
       "url": "http://db.everkinetic.com/exercise/decline-barbell-bench-press",
       "primer": "This is an exercise for chest, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -1793,7 +1793,7 @@
       "title": "Decline Dumbbell Bench Press",
       "url": "http://db.everkinetic.com/exercise/decline-dumbbell-bench-press",
       "primer": "This is an exercise for chest, shoulder and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -1826,7 +1826,7 @@
       "title": "Decline Dumbbell Fly's",
       "url": "http://db.everkinetic.com/exercise/decline-dumbbell-flys",
       "primer": "This is an exercise for chest and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders"
@@ -1859,7 +1859,7 @@
       "title": "Chest Dips",
       "url": "http://db.everkinetic.com/exercise/chest-dips",
       "primer": "This is an exercise for chest, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -1896,7 +1896,7 @@
       "title": "Bench Press Dumbbell",
       "url": "http://db.everkinetic.com/exercise/bench-press-dumbbell",
       "primer": "This is  an exercise for chest,triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -1933,7 +1933,7 @@
       "title": "Dumbbell Flys",
       "url": "http://db.everkinetic.com/exercise/dumbbell-flys",
       "primer": "This is an exercise for chest, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -1970,7 +1970,7 @@
       "title": "Flat Bench Cable Flys",
       "url": "http://db.everkinetic.com/exercise/flat-bench-cable-flys",
       "primer": "This is an exercise for chest and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders"
@@ -2005,7 +2005,7 @@
       "title": "Barbell Front Raise and Pullover",
       "url": "http://db.everkinetic.com/exercise/barbell-front-raise-pullover",
       "primer": "This is an exercise for chest, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2038,7 +2038,7 @@
       "title": "Hammer Grip Incline Bench Press",
       "url": "http://db.everkinetic.com/exercise/hammer-grip-incline-bench-press",
       "primer": "This is an advanced exercise for strengthening the chest, triceps and shoulders.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -2072,7 +2072,7 @@
       "title": "Incline Cable Fly's",
       "url": "http://db.everkinetic.com/exercise/incline-cable-flys",
       "primer": "This exercise is an alternative to the Butterfly or Pec Deck, it defines the muscles of the chest.Place an incline bench set at a 45 degree angle between two cable towers.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "biceps",
@@ -2106,7 +2106,7 @@
       "title": "Dumbbell Incline Bench Press",
       "url": "http://db.everkinetic.com/exercise/dumbbell-incline-bench-press",
       "primer": "This is an advanced exercise for building and sculpting the chest as well as your triceps and shoulders.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2140,7 +2140,7 @@
       "title": "Incline Dumbbell Fly's",
       "url": "http://db.everkinetic.com/exercise/incline-dumbbell-flys",
       "primer": "This is an exercise for chest sculpting and strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders"
@@ -2175,7 +2175,7 @@
       "title": "Incline Fly's with a Twist",
       "url": "http://db.everkinetic.com/exercise/incline-flys-twist",
       "primer": "This is an exercise for chest sculpting and strengthening which is very similar to the incline fly's.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders"
@@ -2204,7 +2204,7 @@
       "title": "Wide Grip Decline Barbell Pullover",
       "url": "http://db.everkinetic.com/exercise/wide-grip-decline-barbell-pullover",
       "primer": "This is an advanced strengthening exercise which targets the pectoral or chest muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "equipment": [
         "decline bench",
@@ -2236,7 +2236,7 @@
       "title": "Machine Bench Press",
       "url": "http://db.everkinetic.com/exercise/machine-bench-press",
       "primer": "This is an exercise for chest, biceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2268,7 +2268,7 @@
       "title": "Barbell Neck Press",
       "url": "http://db.everkinetic.com/exercise/barbell-neck-press",
       "primer": "This is an advanced exercise for chest strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "biceps"
@@ -2304,7 +2304,7 @@
       "title": "One Arm Bench Press",
       "url": "http://db.everkinetic.com/exercise/one-arm-bench-press",
       "primer": "This is an advanced strengthening exercise for the chest and rotator cuff muscles of the shoulder.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2343,7 +2343,7 @@
       "title": "Bosu Ball Push Up",
       "url": "http://db.everkinetic.com/exercise/bosu-ball-push-up",
       "primer": "This is an exercise for chest, core, shoulders and triceps strengthening with the use of a Bosu ball.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -2381,7 +2381,7 @@
       "title": "One Arm Barbell Floor Press",
       "url": "http://db.everkinetic.com/exercise/one-arm-barbell-floor-press",
       "primer": "This is an exercise for chest and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps"
@@ -2413,7 +2413,7 @@
       "title": "One Arm Flat Bench Fly’s",
       "url": "http://db.everkinetic.com/exercise/one-arm-flat-bench-flys",
       "primer": "This is an exercise for chest strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "equipment": [
         "flat bench",
@@ -2442,7 +2442,7 @@
       "title": "One Armed Biased Push Up",
       "url": "http://db.everkinetic.com/exercise/one-armed-biased-push-up",
       "primer": "This is an exercise for chest strengthening but also strengthens ones core, shoulders, biceps and triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2478,7 +2478,7 @@
       "title": "Push Ups Close and Wide Hand Versions",
       "url": "http://db.everkinetic.com/exercise/push-ups-close-and-wide-hand-versions",
       "primer": "These are variations on Push Ups, one of the best exercise for muscles of the chest (pectorals), arms (bicep and triceps) and core development. The core muscles are the rectus abdomen and oblique’s which support the spine.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2539,7 +2539,7 @@
       "title": "Push Ups with Feet Elevated",
       "url": "http://db.everkinetic.com/exercise/push-up-feet-elevated-2",
       "primer": "This is the same general movement as with a Push Up except your feet are elevated allowing greater range of motions and targeting the pectorals differently than the regular Push Up.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -2573,7 +2573,7 @@
       "title": "Push Ups with feet on exercise ball",
       "url": "http://db.everkinetic.com/exercise/push-ups-with-feet-on-exercise-ball",
       "primer": "This is similar to the standard Push Up except using an Exercise Ball forces you to engage the muscle of your core (Rectus Abdominis, Transverse Abdominis, and the Obliques).",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2606,7 +2606,7 @@
       "title": "Push Ups",
       "url": "http://db.everkinetic.com/exercise/push-ups",
       "primer": "This exercise is the main strengthening exercise when wanting to strengthen ones chest, biceps and triceps as well as core muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2641,7 +2641,7 @@
       "title": "Smith Machine Bench Press",
       "url": "http://db.everkinetic.com/exercise/smith-machine-bench-press",
       "primer": "With the use of a Smith Machine this exercise strengthens your chest shoulders and triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -2678,7 +2678,7 @@
       "title": "Straight Arm Dumbbell Pullover",
       "url": "http://db.everkinetic.com/exercise/straight-arm-dumbbell-pullover",
       "primer": "This is an exercise for chest and shoulder strengthening which mainly targets the rotator cuff muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2713,7 +2713,7 @@
       "title": "Incline Dumbbell Press",
       "url": "http://db.everkinetic.com/exercise/incline-dumbbell-press",
       "primer": "This exercises is for mainly chest strengthening but also strengthens your triceps and shoulders.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2772,7 +2772,7 @@
       "title": "Smith Machine Incline Bench Press",
       "url": "http://db.everkinetic.com/exercise/smith-machine-incline-bench-press",
       "primer": "This is an exercise for chest, shoulder and triceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -2809,7 +2809,7 @@
       "title": "Wide Grip Bench Press",
       "url": "http://db.everkinetic.com/exercise/wide-grip-bench-press",
       "primer": "This is an exercise for chest, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2847,7 +2847,7 @@
       "title": "Wide Grip Decline Bench Press",
       "url": "http://db.everkinetic.com/exercise/wide-grip-decline-bench-press",
       "primer": "This is an exercise for chest, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2882,7 +2882,7 @@
       "title": "Incline Chest Press",
       "url": "http://db.everkinetic.com/exercise/incline-chest-press",
       "primer": "This exercise is for strengthening the upper chest and is preferred among beginners as it provides support and control.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "triceps",
@@ -2913,7 +2913,7 @@
       "title": "Decline Chest Press",
       "url": "http://db.everkinetic.com/exercise/decline-chest-press",
       "primer": "This is an exercise for the strengthening of the lower chest or pectoral muscles and is preferred by beginners as it provides support and stability.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "chest",
       "secondary": [
         "shoulders",
@@ -2944,7 +2944,7 @@
       "title": "Body Row",
       "url": "http://db.everkinetic.com/exercise/body-row",
       "primer": "This is a good overall exercise which strengthens your chest, core and back muscles.",
-      "type": "compound",
+      "style": "compound",
       "primary": "chest",
       "secondary": [
         "core",
@@ -2978,7 +2978,7 @@
       "title": "Pull Ups",
       "url": "http://db.everkinetic.com/exercise/pull-ups",
       "primer": "This is an exercise in lats, biceps and middle back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "middle back",
@@ -3013,7 +3013,7 @@
       "title": "Gironda Sternum Chins",
       "url": "http://db.everkinetic.com/exercise/gironda-sternum-chins",
       "primer": "This is an exercise for lats, biceps and middle back strengthening; which is similar t the basic chin up but focusses more on lats.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "biceps",
@@ -3051,7 +3051,7 @@
       "title": "Chin Ups",
       "url": "http://db.everkinetic.com/exercise/chin-ups",
       "primer": "This is an extremely good exercise for upper arm and middle back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "biceps",
@@ -3087,7 +3087,7 @@
       "title": "Narrow Parallel Grip Chin-ups",
       "url": "http://db.everkinetic.com/exercise/narrow-parallel-grip-chin-ups",
       "primer": "This is an exercise similar to the regular Chin Up but focuses more on shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders, lats",
       "secondary": [
         "back",
@@ -3156,7 +3156,7 @@
       "title": "Straight Arm Push Down",
       "url": "http://db.everkinetic.com/exercise/straight-arm-push-down",
       "primer": "This exercise for strengthening the Lats and also works the Triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "triceps"
@@ -3187,7 +3187,7 @@
       "title": "Underhand Pull downs",
       "url": "http://db.everkinetic.com/exercise/underhand-pull-downs",
       "primer": "This is an exercise for lats and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "biceps"
@@ -3218,7 +3218,7 @@
       "title": "Upright Band Rows",
       "url": "http://db.everkinetic.com/exercise/upright-band-rows",
       "primer": "This is an exercise for lats, triceps and shoulder strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "triceps",
@@ -3251,7 +3251,7 @@
       "title": "Underhand Pull down",
       "url": "http://db.everkinetic.com/exercise/underhand-pull-down",
       "primer": "This is an exercise for lats and biceps strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "biceps"
@@ -3282,7 +3282,7 @@
       "title": "V Bar Pull Down",
       "url": "http://db.everkinetic.com/exercise/v-bar-pull-down",
       "primer": "This is an exercise for lats, biceps and middle back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "middle back",
@@ -3315,7 +3315,7 @@
       "title": "Wide Grip Lat Pull Down",
       "url": "http://db.everkinetic.com/exercise/wide-grip-lat-pull-down",
       "primer": "This is an exercise for lats, biceps and middle back strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lats",
       "secondary": [
         "biceps",
@@ -3351,7 +3351,7 @@
       "title": "Pullover On Stability Ball With Weight",
       "url": "http://db.everkinetic.com/exercise/pullover-stability-ball-weight",
       "primer": "This is an exercise for back, shoulders and neck strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "shoulders",
       "secondary": [
         "back",
@@ -3406,7 +3406,7 @@
       "title": "Barbell Dead Lifts",
       "url": "http://db.everkinetic.com/exercise/barbell-dead-lifts",
       "primer": "The techniques is identical to that of the Smith Machine dead lift except for the fact that this exercise provides less support.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "hamstrings",
@@ -3442,7 +3442,7 @@
       "title": "Smith Machine Dead Lifts",
       "url": "http://db.everkinetic.com/exercise/smith-machine-dead-lifts",
       "primer": "This is the same as a Dead Lift but the Smith Machine allows for better control of the weight.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "hamstrings",
@@ -3475,7 +3475,7 @@
       "title": "Barbell Good Mornings",
       "url": "http://db.everkinetic.com/exercise/barbell-good-mornings",
       "primer": "This is one of the oldest exercises in bodybuilding but it still is one of the best for working the lower back.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "hamstrings"
@@ -3506,7 +3506,7 @@
       "title": "Smith Machine Good Mornings",
       "url": "http://db.everkinetic.com/exercise/smith-machine-good-mornings",
       "primer": "This exercise utilises the same technique of the standard Good Mornings yet the use of the Smith Machine provides more stability.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "hamstrings"
@@ -3537,7 +3537,7 @@
       "title": "Hyperextensions",
       "url": "http://db.everkinetic.com/exercise/hyperextensions",
       "primer": "This exercise not only adds strength but also flexibility to the back and core muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "hamstrings",
@@ -3569,7 +3569,7 @@
       "title": "Back Extension on Stability Ball",
       "url": "http://db.everkinetic.com/exercise/back-extension-stability-ball",
       "primer": "This exercise provides flexibility as it strengthens the muscles of the back and core.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "core",
@@ -3601,7 +3601,7 @@
       "title": "Supermans",
       "url": "http://db.everkinetic.com/exercise/supermans",
       "primer": "This is an excellent exercise and a stretch for the lower back and core muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "core"
@@ -3632,7 +3632,7 @@
       "title": "Dumbbell Dead Lifts",
       "url": "http://db.everkinetic.com/exercise/dumbbell-dead-lifts",
       "primer": "This is an exercise for lower back, hamstring and calves strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "lower back",
       "secondary": [
         "calves",
@@ -3670,7 +3670,7 @@
       "title": "Bridging",
       "url": "http://db.everkinetic.com/exercise/bridging",
       "primer": "This is an excellent exercise for strengthening and maintaining the core muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "gluts",
       "secondary": [
         "core"
@@ -3699,7 +3699,7 @@
       "title": "Body Leg Lifts",
       "url": "http://db.everkinetic.com/exercise/body-leg-lifts",
       "primer": "This is an exercise for gluts and hamstring strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "gluts",
       "secondary": [
         "hamstring"
@@ -3730,7 +3730,7 @@
       "title": "One Legged Cable Kickback",
       "url": "http://db.everkinetic.com/exercise/one-legged-cable-kickback",
       "primer": "This is an exercise for gluts and hamstring strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "gluts",
       "secondary": [
         "hamstring"
@@ -3761,7 +3761,7 @@
       "title": "Side Plank",
       "url": "http://db.everkinetic.com/exercise/side-plank",
       "primer": "This is an exercise for core strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "core",
       "equipment": [
         "body"
@@ -3789,7 +3789,7 @@
       "title": "Barbell Lunges",
       "url": "http://db.everkinetic.com/exercise/barbell-lunges",
       "primer": "This is a classic exercise used for strengthening the hamstrings, quadriceps, calves and gluts.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstring",
       "secondary": [
         "gluts",
@@ -3827,7 +3827,7 @@
       "title": "Dumbbell Lunges",
       "url": "http://db.everkinetic.com/exercise/dumbbell-lunges",
       "primer": "This is an exercise for whole leg but mainly hamstring strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstring",
       "secondary": [
         "gluts",
@@ -3865,7 +3865,7 @@
       "title": "Flutter Kicks",
       "url": "http://db.everkinetic.com/exercise/flutter-kicks",
       "primer": "This is an exercise for quadriceps and hamstring strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstrings",
       "secondary": [
         "quadriceps"
@@ -3897,7 +3897,7 @@
       "title": "Lying Leg Curl Machine",
       "url": "http://db.everkinetic.com/exercise/lying-leg-curl-machine",
       "primer": "This is an exercise for hamstring strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstring",
       "equipment": [
         "machine"
@@ -3925,7 +3925,7 @@
       "title": "Romanian Dead Lift",
       "url": "http://db.everkinetic.com/exercise/romanian-dead-lift",
       "primer": "This is an exercise similar to the regular dead lift and strengthens the hamstring, calves, quadriceps and gluts.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstrings",
       "secondary": [
         "calves",
@@ -3960,7 +3960,7 @@
       "title": "Seated Leg Curl",
       "url": "http://db.everkinetic.com/exercise/seated-leg-curl",
       "primer": "This is an exercise for hamstring strengthening which is similar to the laying leg curls.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstrings",
       "equipment": [
         "machine"
@@ -3988,7 +3988,7 @@
       "title": "Standing Leg Curls",
       "url": "http://db.everkinetic.com/exercise/standing-leg-curls",
       "primer": "This is an exercise for hamstring strengthening.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstrings",
       "equipment": [
         "machine"
@@ -4016,7 +4016,7 @@
       "title": "Walking Lunges",
       "url": "http://db.everkinetic.com/exercise/walking-lunges",
       "primer": "A walking lunge gives you the benefit of lunges plus core muscle training from the constant motion.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "hamstrings",
       "secondary": [
         "quadriceps",
@@ -4058,7 +4058,7 @@
       "title": "Barbell Squat",
       "url": "http://db.everkinetic.com/exercise/barbell-squat",
       "primer": "",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings"
@@ -4091,7 +4091,7 @@
       "title": "Hack Squat Machine",
       "url": "http://db.everkinetic.com/exercise/hack-squat-machine",
       "primer": "This exercise is a variation of the Squat which uses a machine.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings",
@@ -4126,7 +4126,7 @@
       "title": "Smith Machine Squats",
       "url": "http://db.everkinetic.com/exercise/smith-machine-squats",
       "primer": "This exercise is a variation of a squat using the Smith Machine.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4162,7 +4162,7 @@
       "title": "Hack Squat with barbell",
       "url": "http://db.everkinetic.com/exercise/hack-squat-with-barbell",
       "primer": "This is another variation of the basic Squat that focuses primarily on the quadriceps or thigh muscles.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings"
@@ -4195,7 +4195,7 @@
       "title": "Smith Machine Hack Squat",
       "url": "http://db.everkinetic.com/exercise/smith-machine-hack-squat",
       "primer": "This is another variation of the basic Squat that focuses primarily on the quadriceps, or thigh muscles, while using the Smith Machine.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings",
@@ -4231,7 +4231,7 @@
       "title": "Leg Press",
       "url": "http://db.everkinetic.com/exercise/leg-press",
       "primer": "This exercise is crucial for building and strengthening the legs.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4264,7 +4264,7 @@
       "title": "Rear Lunges with Barbell",
       "url": "http://db.everkinetic.com/exercise/rear-lunges-with-barbell",
       "primer": "This is an advanced version of a lunge.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hip abductors",
@@ -4300,7 +4300,7 @@
       "title": "Rear Lunges with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/rear-lunges-with-dumbbell",
       "primer": "This is an advanced version of a lunge using a dumbbell.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4336,7 +4336,7 @@
       "title": "Squats using Dumbbells",
       "url": "http://db.everkinetic.com/exercise/squats-using-dumbbells",
       "primer": "This is a great overall exercise for the lower body that uses dumbbells.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstring",
@@ -4371,7 +4371,7 @@
       "title": "Side Squats with Barbell",
       "url": "http://db.everkinetic.com/exercise/side-squats-with-barbell",
       "primer": "This version of a squat works the hip adductors, helping build better core strength and coordination.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hip abductors",
@@ -4403,7 +4403,7 @@
       "title": "Single Leg Squat with Barbell",
       "url": "http://db.everkinetic.com/exercise/single-leg-squat-with-barbell",
       "primer": "This is an advanced exercise and modification of the basic squat.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4437,7 +4437,7 @@
       "title": "Squat to Bench with Barbell",
       "url": "http://db.everkinetic.com/exercise/squat-to-bench-with-barbell",
       "primer": "This variation on a squat uses a bench to remind you how far down to squat.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "gluts",
@@ -4474,7 +4474,7 @@
       "title": "Step Ups with Barbell",
       "url": "http://db.everkinetic.com/exercise/step-ups-with-barbell",
       "primer": "This exercise builds coordination as well as muscle.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings",
@@ -4510,7 +4510,7 @@
       "title": "Hip Adduction",
       "url": "http://db.everkinetic.com/exercise/hip-adduction",
       "primer": "This exercises strengthens hip flexors and muscles of the thighs.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "quadriceps",
       "secondary": [
         "hip abductors"
@@ -4541,7 +4541,7 @@
       "title": "Squat to Bench with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/squat-to-bench-with-dumbbells",
       "primer": "This variation of a squat uses a bench to remind you how far down to squat.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4578,7 +4578,7 @@
       "title": "Step Ups with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/step-ups-with-dumbbells",
       "primer": "This exercise builds coordination as well as muscle.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4614,7 +4614,7 @@
       "title": "Front Squat with Barbell",
       "url": "http://db.everkinetic.com/exercise/front-squat-with-barbell",
       "primer": "The Front Squat works the same muscles as the rear squat without placing the weight of the bar on your shoulders.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings",
@@ -4648,7 +4648,7 @@
       "title": "Front Squat to Bench with Barbells",
       "url": "http://db.everkinetic.com/exercise/front-squat-to-bench-with-barbells",
       "primer": "The Front Squat works the same muscles as the rear squat without placing the weight of the bar on your shoulders.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings",
@@ -4684,7 +4684,7 @@
       "title": "Iron Cross with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/iron-cross-with-dumbbells",
       "primer": "This is an advanced exercise that works the whole body.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "trapezius",
@@ -4718,7 +4718,7 @@
       "title": "Jefferson Squats with Barbell",
       "url": "http://db.everkinetic.com/exercise/jefferson-squats-with-barbell",
       "primer": "This exercise builds and shapes the inner thighs.",
-      "type": "compound",
+      "style": "compound",
       "primary": "hamstrings",
       "equipment": [
         "barbell"
@@ -4747,7 +4747,7 @@
       "title": "Leg Extensions",
       "url": "http://db.everkinetic.com/exercise/leg-extensions",
       "primer": "This exercise is a staple for building strong legs.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "quadriceps",
       "equipment": [
         "machine"
@@ -4776,7 +4776,7 @@
       "title": "Narrow Stance Leg Press",
       "url": "http://db.everkinetic.com/exercise/narrow-stance-leg-press",
       "primer": "This is a variation of the leg press which targets more of the external muscles of the legs.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4810,7 +4810,7 @@
       "title": "Lying Squat",
       "url": "http://db.everkinetic.com/exercise/lying-squat",
       "primer": "This exercise is similar to a Leg Press Machine working the same muscles.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4842,7 +4842,7 @@
       "title": "Narrow Stance Hack Squats",
       "url": "http://db.everkinetic.com/exercise/narrow-stance-hack-squats",
       "primer": "Like the Hack Squat, this exercise works the muscles of the leg.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings",
@@ -4877,7 +4877,7 @@
       "title": "Narrow Stance Squat with Barbell",
       "url": "http://db.everkinetic.com/exercise/narrow-stance-squat-with-barbell",
       "primer": "This version of the Squat targets and defines more of the externals leg muscles.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "glutes",
@@ -4913,7 +4913,7 @@
       "title": "One Leg Squat with Barbell",
       "url": "http://db.everkinetic.com/exercise/one-leg-squat-with-barbell",
       "primer": "The One Leg Squat isolates the muscles of the leg for optimal exercise.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -4951,7 +4951,7 @@
       "title": "One Arm Snatch with Barbell",
       "url": "http://db.everkinetic.com/exercise/one-arm-snatch-with-barbell",
       "primer": "This is an advanced exercise that works most of the muscles of the body.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "shoulders",
@@ -4988,7 +4988,7 @@
       "title": "One Arm Side Deadlift with Barbell",
       "url": "http://db.everkinetic.com/exercise/one-arm-side-deadlift-with-barbell",
       "primer": "This is an advanced exercise that works most of the muscles of the body.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "abdominals",
@@ -5024,7 +5024,7 @@
       "title": "Overhead Squat with Barbell",
       "url": "http://db.everkinetic.com/exercise/overhead-squat-with-barbell",
       "primer": "In this version of the squat you hold the bar overhead as you perform the exercise.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "glutes",
@@ -5060,7 +5060,7 @@
       "title": "Pile Squat with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/pile-squat-with-dumbbell",
       "primer": "This version of the squat is done with a dumbbell and mimics the action of a pile driver.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings",
@@ -5094,7 +5094,7 @@
       "title": "Speed Squats with Barbell",
       "url": "http://db.everkinetic.com/exercise/speed-squats-with-barbell",
       "primer": "This version of the squat uses an empty barbell and moves at a faster pace than the standard squat.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -5129,7 +5129,7 @@
       "title": "Squats with Exercise Bands",
       "url": "http://db.everkinetic.com/exercise/squats-with-exercise-bands",
       "primer": "This version of the Squat uses flexible exercise bands for resistance instead of weights.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -5163,7 +5163,7 @@
       "title": "Thigh Abductor",
       "url": "http://db.everkinetic.com/exercise/thigh-abductor",
       "primer": "This exercise targets and works the muscles of the outer thigh.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings"
@@ -5194,7 +5194,7 @@
       "title": "Thigh Adductor",
       "url": "http://db.everkinetic.com/exercise/thigh-adductor",
       "primer": "This exercise targets and works the muscles of the inner thigh.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "quadriceps",
       "secondary": [
         "hamstrings"
@@ -5225,7 +5225,7 @@
       "title": "Weighted Sissy Squat with Weight Plate",
       "url": "http://db.everkinetic.com/exercise/weighted-sissy-squat-with-weight-plate",
       "primer": "Don't let the name of this exercise fool you, it is a an assisted squat which effectively works the quadriceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "quadriceps",
       "equipment": [
         "weight plate"
@@ -5254,7 +5254,7 @@
       "title": "Wide Stance Squat with Barbell",
       "url": "http://db.everkinetic.com/exercise/wide-stance-squat-with-barbell",
       "primer": "This version of the squat uses a wider stance to isolate the inner thigh.",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "calves",
@@ -5288,7 +5288,7 @@
       "title": "Zecher Squats",
       "url": "http://db.everkinetic.com/exercise/zecher-squats",
       "primer": "This variation of squat is similar to a Front Squat, it works to build the Upper muscles of the quadriceps (thighs).",
-      "type": "compound",
+      "style": "compound",
       "primary": "quadriceps",
       "secondary": [
         "glutes",
@@ -5324,7 +5324,7 @@
       "title": "Bench Dips",
       "url": "http://db.everkinetic.com/exercise/bench-dips",
       "primer": "This exercise is one of the most basic and still one of the best for building the triceps.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "secondary": [
         "chest"
@@ -5358,7 +5358,7 @@
       "title": "Incline Pushdown with Cable",
       "url": "http://db.everkinetic.com/exercise/incline-pushdown-with-cable",
       "primer": "This exercise uses cables to isolate and work the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -5389,7 +5389,7 @@
       "title": "Incline Triceps Extension with Cable",
       "url": "http://db.everkinetic.com/exercise/incline-triceps-extension-with-cable",
       "primer": "This exercise uses cables to isolate and work the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -5419,7 +5419,7 @@
       "title": "Lying Tricep Extension with Cable",
       "url": "http://db.everkinetic.com/exercise/lying-triceps-extension-with-cable",
       "primer": "This exercise uses cables to isolate and work the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -5450,7 +5450,7 @@
       "title": "One Arm Tricep Extension with Cable",
       "url": "http://db.everkinetic.com/exercise/one-arm-tricep-extension-with-cable",
       "primer": "This exercise isolates the triceps muscles individually.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -5480,7 +5480,7 @@
       "title": "Standing Triceps Extension",
       "url": "http://db.everkinetic.com/exercise/standing-triceps-extension",
       "primer": "This exercise works the triceps by reaching behind your neck.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -5509,7 +5509,7 @@
       "title": "Decline Close Grip Bench to Skull Crusher",
       "url": "http://db.everkinetic.com/exercise/decline-close-grip-bench-to-skull-crusher",
       "primer": "This exercise combines a close grip bench press with triceps extension.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "secondary": [
         "chest"
@@ -5542,7 +5542,7 @@
       "title": "Decline Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/decline-triceps-extension-with-dumbbell",
       "primer": "This exercise combines a decline bench and dumbbells to target the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -5569,7 +5569,7 @@
       "title": "Decline EZ Bar Triceps Extension with Barbell",
       "url": "http://db.everkinetic.com/exercise/decline-ez-bar-triceps-extension-with-barbell",
       "primer": "This exercise combines a decline bench and a curved bar to more efficiently work the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "barbell"
@@ -5596,7 +5596,7 @@
       "title": "Tricep Dips using Machine",
       "url": "http://db.everkinetic.com/exercise/tricep-dips",
       "primer": "This exercise uses a machine to work the triceps while in seated position.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "secondary": [
         "shoulders"
@@ -5626,7 +5626,7 @@
       "title": "Tricep Dips using Body Weight",
       "url": "http://db.everkinetic.com/exercise/tricep-dips-using-body-weight",
       "primer": "This classic exercise uses the weight of your own body to work your triceps.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "secondary": [
         "shoulders",
@@ -5658,7 +5658,7 @@
       "title": "One Arm Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/one-arm-triceps-extension-with-dumbbell",
       "primer": "This exercise uses a dumbbell to work each arm individually.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -5686,7 +5686,7 @@
       "title": "Incline Triceps Extension with Barbell",
       "url": "http://db.everkinetic.com/exercise/incline-triceps-extension-with-barbell",
       "primer": "This version of a triceps extension uses gravity to increase the resistance of the exercise.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "barbell"
@@ -5714,7 +5714,7 @@
       "title": "JM Press",
       "url": "http://db.everkinetic.com/exercise/jm-press",
       "primer": "This is an advanced exercise used by bodybuilders and power lifters to build explosive power in the triceps muscle.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "secondary": [
         "shoulders"
@@ -5747,7 +5747,7 @@
       "title": "Kneeling Triceps Concentration Extension with Cable",
       "url": "http://db.everkinetic.com/exercise/kneeling-triceps-extension-with-cable",
       "primer": "Concentration exercises limit your range of movement to increase the effectiveness of the movement.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -5777,7 +5777,7 @@
       "title": "Kneeling Triceps Extension with Cable",
       "url": "http://db.everkinetic.com/exercise/kneeling-triceps-extension-with-cable-2",
       "primer": "Kneeling allows you to isolate your triceps more effectively.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -5806,7 +5806,7 @@
       "title": "Low Triceps Extension with Cable",
       "url": "http://db.everkinetic.com/exercise/low-triceps-extension-with-cable",
       "primer": "This exercise is done while lying on a seated row station.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -5835,7 +5835,7 @@
       "title": "Lying Close-Grip Triceps Extension Behind the Head with Barbell",
       "url": "http://db.everkinetic.com/exercise/lying-close-grip-triceps-extension-behind-the-head-with-barbell",
       "primer": "You can use a barbell or EZ bar to further concentrate the benefit to your triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "barbell"
@@ -5864,7 +5864,7 @@
       "title": "Lying Close Grip Triceps Press to Chin with Barbell",
       "url": "http://db.everkinetic.com/exercise/lying-close-grip-triceps-press-to-chin-with-barbell",
       "primer": "This exercise is a classic for building the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "barbell"
@@ -5893,7 +5893,7 @@
       "title": "Lying Triceps Extension with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/lying-triceps-extension-with-dumbbells",
       "primer": "This exercise uses gravity to increase the resistance of the weight.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -5922,7 +5922,7 @@
       "title": "Lying Triceps Extension Across Face with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/lying-triceps-extension-across-face-with-dumbbell",
       "primer": "This is an advanced Triceps exercise and should be avoided by beginners.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -5953,7 +5953,7 @@
       "title": "Lying Triceps Press with Barbell",
       "url": "http://db.everkinetic.com/exercise/lying-triceps-press-with-barbell",
       "primer": "This is another classic exercise for building the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "secondary": [
         "chest"
@@ -5986,7 +5986,7 @@
       "title": "Lying Two Arm Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/lying-two-arm-triceps-extension-with-dumbbell",
       "primer": "This a lying version of a Triceps Kickback.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6014,7 +6014,7 @@
       "title": "Old School Reverse Extensions",
       "url": "http://db.everkinetic.com/exercise/old-school-reverse-extensions",
       "primer": "As the name suggests, this is an old classic exercise that hits the triceps hard.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "barbell"
@@ -6042,7 +6042,7 @@
       "title": "Single Arm Pronated Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/single-arm-triceps-extension-with-dumbbell",
       "primer": "This is an advanced exercise to isolate and work the tricep muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6073,7 +6073,7 @@
       "title": "Single Arm Supinated Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/single-arm-supinated-triceps-extension-with-dumbbell",
       "primer": "This exercise is similar to the Single Arm Pronated Triceps Extension except the movement is over the head instead of across the chest.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6102,7 +6102,7 @@
       "title": "Close Triceps Pushup",
       "url": "http://db.everkinetic.com/exercise/close-triceps-pushup",
       "primer": "This version of the Pushup isolates the tricep muscles.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "secondary": [
         "chest"
@@ -6134,7 +6134,7 @@
       "title": "Reverse Grip Triceps Pushdown",
       "url": "http://db.everkinetic.com/exercise/reverse-grip-triceps-pushdown",
       "primer": "This exercise is the reverse version of the triceps pushdown.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -6163,7 +6163,7 @@
       "title": "Reverse Triceps Bench Press with Barbell",
       "url": "http://db.everkinetic.com/exercise/reverse-triceps-bench-press-with-barbell",
       "primer": "This exercise is a version of the Bench Press that specifically isolates the triceps.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "secondary": [
         "chest"
@@ -6194,7 +6194,7 @@
       "title": "Seated One Arm Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/seated-one-arm-triceps-extension-with-dumbbell",
       "primer": "This exercise uses a kickback movement to work the triceps in each arm individually.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6223,7 +6223,7 @@
       "title": "Seated Two-Arm Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/seated-two-arm-triceps-extension-with-dumbbell",
       "primer": "This exercise is the two handed version of seated triceps extension.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6249,7 +6249,7 @@
       "title": "Seated Overhead Triceps Extension with Barbell",
       "url": "http://db.everkinetic.com/exercise/seated-overhead-triceps-extension-with-barbell",
       "primer": "This exercise uses a barbell behind your neck to isolate the triceps effectively.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "barbell"
@@ -6277,7 +6277,7 @@
       "title": "Seated Triceps Press with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/seated-triceps-press-with-dumbbell",
       "primer": "This exercise uses a single dumbbell held between both hands to work the triceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6306,7 +6306,7 @@
       "title": "Smith Machine Close Grip Bench Press",
       "url": "http://db.everkinetic.com/exercise/smith-machine-close-grip-bench-press",
       "primer": "This version of a Bench Press uses a close grip to isolate the triceps as well as working the chest.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "secondary": [
         "chest"
@@ -6333,7 +6333,7 @@
       "title": "Bent-Over One Arm Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/bent-over-one-arm-triceps-extension-with-dumbbell",
       "primer": "This exercise uses a kickback movement to work the triceps in each arm individually.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6358,7 +6358,7 @@
       "title": "Bent-Over Two Arm Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/bent-over-two-arm-triceps-extension-with-dumbbell",
       "primer": "This exercise uses a kickback movement to work the triceps in each arm individually.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6383,7 +6383,7 @@
       "title": "Standing Triceps Extension",
       "url": "http://db.everkinetic.com/exercise/standing-triceps-extension-2",
       "primer": "This exercise works the triceps by reaching behind your neck.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6412,7 +6412,7 @@
       "title": "One Arm Low-Pulley Triceps Extension with Cable",
       "url": "http://db.everkinetic.com/exercise/one-arm-low-pulley-triceps-extension-with-cable",
       "primer": "This exercise uses a cable machine to isolate the triceps.",
-      "type": "compound",
+      "style": "compound",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -6442,7 +6442,7 @@
       "title": "Standing One Arm Triceps Extension with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/standing-one-arm-triceps-extension-with-dumbbell",
       "primer": "This is a single arm version of a behind the neck triceps exercise.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbell"
@@ -6472,7 +6472,7 @@
       "title": "Standing Overhead Triceps Extension with Barbell",
       "url": "http://db.everkinetic.com/exercise/standing-overhead-triceps-extension-with-barbell",
       "primer": "This is a double arm barbell version of a behind the neck triceps exercise.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "barbell"
@@ -6501,7 +6501,7 @@
       "title": "Standing Triceps Extension with Towel",
       "url": "http://db.everkinetic.com/exercise/standing-triceps-extension-with-towel",
       "primer": "This exercise requires another person and uses manual resistance, or your body’s own weight to build muscle.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "body"
@@ -6527,7 +6527,7 @@
       "title": "Tate Press with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/tate-press-with-dumbbell",
       "primer": "This is an advanced triceps exercise which moves the muscle differently than other exercises.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6552,7 +6552,7 @@
       "title": "Triceps Kickback with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/triceps-kickback-with-dumbbell",
       "primer": "This along with the Triceps Push Down is one of the most beneficial exercises for the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "dumbbell"
@@ -6579,7 +6579,7 @@
       "title": "Triceps Pushdown with Cable",
       "url": "http://db.everkinetic.com/exercise/triceps-pushdown-with-cable",
       "primer": "This exercise is the original version of the triceps pushdown.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -6609,7 +6609,7 @@
       "title": "Triceps Pushdown with Rope and Cable",
       "url": "http://db.everkinetic.com/exercise/triceps-pushdown-with-rope-and-cable",
       "primer": "This version of the triceps pushdown uses a rope for better definition in the muscle.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable"
@@ -6639,7 +6639,7 @@
       "title": "Triceps Pushdown with V Bar and Cable",
       "url": "http://db.everkinetic.com/exercise/triceps-pushdown-with-v-bar-and-cable",
       "primer": "This exercise is the triceps pushdown uses a V shaped bar.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "cable",
@@ -6672,7 +6672,7 @@
       "title": "Weighted Ball Side Bend",
       "url": "http://db.everkinetic.com/exercise/weighted-ball-side-bend",
       "primer": "This exercise use a Stability Ball instead of a bench to work the obliques.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "obliques",
       "equipment": [
         "weight",
@@ -6700,7 +6700,7 @@
       "title": "Incline Triceps Extensions with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/incline-triceps-extensions-with-dumbbell",
       "primer": "This version of the triceps extension uses an incline bench.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "secondary": [
         "shoulders"
@@ -6731,7 +6731,7 @@
       "title": "Triceps Extensions using Machine",
       "url": "http://db.everkinetic.com/exercise/triceps-extensions-using-machine",
       "primer": "This exercise uses a machine to insure proper range of motion for tricep extensions.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps",
       "equipment": [
         "machine"
@@ -6758,7 +6758,7 @@
       "title": "Biceps Curls with Barbell",
       "url": "http://db.everkinetic.com/exercise/biceps-curls-with-barbell",
       "primer": "This is a basic exercise for the biceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "shoulders",
@@ -6792,7 +6792,7 @@
       "title": "Standing Biceps Curl with Cable",
       "url": "http://db.everkinetic.com/exercise/standing-biceps-curl-with-cable",
       "primer": "This version of the biceps curl uses a cable instead of a barbell to work the muscles of the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm",
@@ -6826,7 +6826,7 @@
       "title": "Alternating Hammer Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/alternating-hammer-curl-with-dumbbell",
       "primer": "This exercise uses a hammering motion to isolate the biceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -6860,7 +6860,7 @@
       "title": "Alternating Incline Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/alternating-incline-curl-with-dumbbell",
       "primer": "This exercise uses an incline bench to change your body’s position as you perform Biceps Curls.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -6886,7 +6886,7 @@
       "title": "Lying Incline Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/lying-incline-curl-with-barbell",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "barbell"
@@ -6914,7 +6914,7 @@
       "title": "Hammer Curls with Rope and Cable",
       "url": "http://db.everkinetic.com/exercise/hammer-curls-with-rope-and-cable",
       "primer": "Using the rope with the cable machine allows you isolate the biceps with this version of the Hammer Curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "cable"
@@ -6941,7 +6941,7 @@
       "title": "Preacher Curl with Cable",
       "url": "http://db.everkinetic.com/exercise/preacher-curl-with-cable",
       "primer": "A Preacher Curl uses a special bench to support the triceps and isolate the biceps to build the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -6974,7 +6974,7 @@
       "title": "Close Grip EZ Bar Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/close-grip-ez-bar-curl-with-barbell",
       "primer": "This exercise uses a cambered EZ or curl bar to isolate the biceps during a curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7007,7 +7007,7 @@
       "title": "Close Grip Standing Biceps Curls with Barbell",
       "url": "http://db.everkinetic.com/exercise/close-grip-standing-biceps-curls-with-barbell",
       "primer": "This exercise uses a standard barbell to isolate the biceps during a curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7040,7 +7040,7 @@
       "title": "Concentration Curls with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/concentration-curls-with-dumbbell",
       "primer": "Concentration exercises limit your range of movement to increase the effectiveness of the movement.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7070,7 +7070,7 @@
       "title": "Cross Body Hammer Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/cross-body-hammer-curl-with-dumbbell",
       "primer": "This exercise targets the biceps using a crossing motion rather than a standard curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7101,7 +7101,7 @@
       "title": "Drag Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/drag-curl-with-barbell",
       "primer": "This exercise works the biceps and forearms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7134,7 +7134,7 @@
       "title": "Alternating Bicep Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/alternating-biceps-curl-with-dumbbell",
       "primer": "This exercise is a single arm version of a biceps curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7168,7 +7168,7 @@
       "title": "Biceps Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-with-dumbbell",
       "primer": "This version of a biceps curl uses both arms at the same time.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7201,7 +7201,7 @@
       "title": "Prone Incline Biceps Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/prone-incline-biceps-curl-with-dumbbell",
       "primer": "This exercise uses an incline bench to change your body’s position as you perform Biceps Curls.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -7229,7 +7229,7 @@
       "title": "EZ Bar Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/ez-bar-curl-with-barbell",
       "primer": "This exercise uses an EZ or curl bar to better isolate and build the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7261,7 +7261,7 @@
       "title": "Biceps Hammer Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/bicep-hammer-curl-with-dumbbell",
       "primer": "This exercise uses a hammering motion to isolate the biceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -7292,7 +7292,7 @@
       "title": "Flexor Incline Curls with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/flexor-incline-curls-with-dumbbell",
       "primer": "This exercise was designed to keep the stress on the biceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -7317,7 +7317,7 @@
       "title": "High Cable Curls",
       "url": "http://db.everkinetic.com/exercise/high-cable-curls",
       "primer": "This exercise allows you to target the muscles of your arms from a different position.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "triceps"
@@ -7350,7 +7350,7 @@
       "title": "Incline Biceps Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/incline-inner-biceps-curl-with-dumbbell",
       "primer": "This exercise uses an incline bench to change your body’s position as you perform Biceps Curls.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -7378,7 +7378,7 @@
       "title": "Incline Inner Biceps Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/incline-inner-biceps-curl-with-dumbbell-2",
       "primer": "This exercise uses an incline bench and twist to more to change your body’s position as you perform Biceps Curls.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -7406,7 +7406,7 @@
       "title": "Lying Bicep Cable Curl",
       "url": "http://db.everkinetic.com/exercise/lying-bicep-cable-curl",
       "primer": "By lying down you are able to isolate the muscles of your biceps without standing or sitting.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7435,7 +7435,7 @@
       "title": "Lying Close Grip Biceps Curls with Cable",
       "url": "http://db.everkinetic.com/exercise/lying-close-grip-biceps-curls-with-cable",
       "primer": "This exercise combines a flat body position with a pulling motion to work the biceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "cable"
@@ -7464,7 +7464,7 @@
       "title": "Lying High Bench Biceps Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/lying-high-bench-biceps-curl-with-barbell",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "barbell"
@@ -7493,7 +7493,7 @@
       "title": "Lying Supine Biceps Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/lying-supine-biceps-curl-with-dumbbell",
       "primer": "This is an advanced biceps exercise where you lay down to isolate the muscles you are working.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -7521,7 +7521,7 @@
       "title": "Preacher Curl with Machine",
       "url": "http://db.everkinetic.com/exercise/preacher-curl-with-machine",
       "primer": "A Preacher Curl uses a special bench to support the triceps and isolate the biceps to build the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7551,7 +7551,7 @@
       "title": "One Arm Preacher Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/one-arm-preacher-curl-with-dumbbell",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7586,7 +7586,7 @@
       "title": "Overhead Curl with Cable",
       "url": "http://db.everkinetic.com/exercise/overhead-curl-with-cable",
       "primer": "By using cable, this exercise isolates and defines the biceps muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "cable"
@@ -7617,7 +7617,7 @@
       "title": "Preacher Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/preacher-curl-with-barbell",
       "primer": "A Preacher Curl uses a special bench to support the triceps and isolate the biceps to build the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7651,7 +7651,7 @@
       "title": "Preacher Hammer Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/preacher-hammer-curl-with-dumbbell",
       "primer": "This exercise combines a Hammer Curl with a Preacher bench.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "dumbbell"
@@ -7680,7 +7680,7 @@
       "title": "Reverse Plate Curls with Weight",
       "url": "http://db.everkinetic.com/exercise/reverse-plate-curls-with-weight",
       "primer": "This exercise uses a free weight plate to build muscle.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7708,7 +7708,7 @@
       "title": "Seated Close Grip Concentration Curls with Barbell",
       "url": "http://db.everkinetic.com/exercise/seated-close-grip-concentration-curls-with-barbell",
       "primer": "Concentration exercises limit your range of movement to increase the effectiveness of the movement.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "barbell"
@@ -7736,7 +7736,7 @@
       "title": "Seated Bicep Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/seated-biceps-curl-with-dumbbell",
       "primer": "This exercise is a seated biceps curl using dumbbells.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7768,7 +7768,7 @@
       "title": "Seated Inner Biceps Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/seated-inner-biceps-curl-with-dumbbell",
       "primer": "This exercise works the inner biceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7800,7 +7800,7 @@
       "title": "Spider Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/spider-curl-with-barbell",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "equipment": [
         "barbell"
@@ -7831,7 +7831,7 @@
       "title": "Standing Inner Biceps Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/standing-inner-biceps-curl-with-dumbbell",
       "primer": "This exercise works the inner biceps.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7863,7 +7863,7 @@
       "title": "Standing One Arm Bicep Curl with Cable",
       "url": "http://db.everkinetic.com/exercise/standing-one-arm-biceps-curl-with-cable",
       "primer": "This is a single arm version of a bicep cable curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7897,7 +7897,7 @@
       "title": "Standing One Arm Curl Over Incline Bench with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/standing-one-arm-curl-over-incline-bench-with-dumbbell",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7932,7 +7932,7 @@
       "title": "Two-Arm Preacher Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/two-arm-preacher-curl-with-dumbbell",
       "primer": "This version of a Preacher Curl uses a special bench and dumbbells.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -7966,7 +7966,7 @@
       "title": "Wide Grip Standing Biceps Curl with Barbell",
       "url": "http://db.everkinetic.com/exercise/wide-grip-standing-biceps-curl-with-barbell",
       "primer": "This is a wide grip version of a biceps curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8000,7 +8000,7 @@
       "title": "Zottman Curl with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/zottman-curl-with-dumbbells",
       "primer": "This is an advanced exercise where you turn the dumbbells up and out.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8032,7 +8032,7 @@
       "title": "Zottman Preacher Curl with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/zottman-preacher-curl-with-dumbbells",
       "primer": "This is an advanced exercise where you turn the dumbbells up and out using a Preacher Curl bench for support.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8064,7 +8064,7 @@
       "title": "Bicep Curl with Machine",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-with-machine",
       "primer": "This exercise uses a machine to insure proper form.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8092,7 +8092,7 @@
       "title": "One Arm Bicep Curl with Olympic Bar or Barbell",
       "url": "http://db.everkinetic.com/exercise/one-arm-biceps-curl-with-olympic-bar-or-barbell",
       "primer": "This is an advanced exercise for building stability and the muscles of the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8125,7 +8125,7 @@
       "title": "Biceps Curl Seated on Stability Ball with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-seated-on-stability-ball-with-dumbbell",
       "primer": "This version of a biceps curl uses a Stability Ball.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8157,7 +8157,7 @@
       "title": "Biceps Curl Squat with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-squat-with-dumbbell",
       "primer": "This exercise combines a squat with a curl to effectively work the entire body.",
-      "type": "isolation, compound",
+      "style": "isolation, compound",
       "primary": "biceps",
       "secondary": [
         "hamstrings",
@@ -8188,7 +8188,7 @@
       "title": "Biceps Curl Reverse with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-reverse-with-dumbbells",
       "primer": "This is a reverse curl exercise that works all of the muscles of the arms.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8219,7 +8219,7 @@
       "title": "One Arm Bicep Concentration on Stability Ball with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/one-arm-bicep-concentration-on-stability-ball-with-dumbbell",
       "primer": "This exercise uses a Stability Ball instead of a bench for better form.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "forearm"
@@ -8249,7 +8249,7 @@
       "title": "Bicep Curl with Deadlift with Barbell",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-with-deadlift-with-barbell",
       "primer": "This exercise combines a bicep curl with a deadlift.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "calves",
@@ -8283,7 +8283,7 @@
       "title": "Biceps Curl with Overhead Extension using Dumbbells on Stability Ball",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-with-overhead-extension-using-dumbbells-on-stability-ball",
       "primer": "This exercise requires you to be able to balance kneeling on a stability ball before you can correctly perform this exercise",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "triceps, biceps",
       "secondary": [
         "forearm",
@@ -8318,7 +8318,7 @@
       "title": "Quick Alternating Biceps Curls with Band",
       "url": "http://db.everkinetic.com/exercise/quick-alternating-biceps-curls-with-band",
       "primer": "This exercise uses a bungy or exercise band for resistance.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "triceps"
@@ -8385,7 +8385,7 @@
       "title": "Bicep Curl on Stability Ball with Leg Raised",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-on-stability-ball-with-leg-raised",
       "primer": "This exercise incorporates balance along with a bicep curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "hamstring",
@@ -8421,7 +8421,7 @@
       "title": "Lateral Lunge with Bicep Curl with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/lateral-lunge-with-biceps-curl-with-dumbbell",
       "primer": "This is an advanced exercise that combines a lateral lunge with a bicep curl.",
-      "type": "compound, isolation",
+      "style": "compound, isolation",
       "primary": "quadriceps, biceps",
       "secondary": [
         "forearm",
@@ -8456,7 +8456,7 @@
       "title": "Forward Lunge with Bicep Curl using Dumbbell",
       "url": "http://db.everkinetic.com/exercise/forward-lunge-with-biceps-curl-using-dumbbell",
       "primer": "This exercise combines a forward lunge with a bicep curl.",
-      "type": "compound, isolation",
+      "style": "compound, isolation",
       "primary": "biceps",
       "secondary": [
         "calves",
@@ -8497,7 +8497,7 @@
       "title": "Step Up Single Leg Balance with Bicep Curl using Dumbbells",
       "url": "http://db.everkinetic.com/exercise/step-up-single-leg-balance-with-biceps-curl-using-dumbbells",
       "primer": "This exercise combines a step up with a bicep curl.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "core",
@@ -8538,7 +8538,7 @@
       "title": "Medicine Ball Biceps Curl on Stability Ball",
       "url": "http://db.everkinetic.com/exercise/medicine-ball-biceps-curl-on-stability-ball",
       "primer": "This exercise combines a new technology, Stability Ball, with a old piece of fitness equipment, the Medicine Ball.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "core",
@@ -8568,7 +8568,7 @@
       "title": "Stork Stance Bicep Curl with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/stork-stance-biceps-curl-with-dumbbells",
       "primer": "This is an advanced exercise that requires excellent coordination and balance.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "quadriceps",
@@ -8604,7 +8604,7 @@
       "title": "Biceps Curl V Sit on Dome with Dumbbells",
       "url": "http://db.everkinetic.com/exercise/biceps-curl-v-sit-on-dome-with-dumbbells",
       "primer": "This exercise uses a Dome (or Bosu) as a seat forcing you to engage and contract your abs throughout the exercise.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "biceps",
       "secondary": [
         "abdominals",
@@ -8636,7 +8636,7 @@
       "title": "Ankle Circles",
       "url": "http://db.everkinetic.com/exercise/ankle-circles",
       "primer": "This is the most simple of all exercises for the calves.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "body"
@@ -8660,7 +8660,7 @@
       "title": "Balance Board",
       "url": "http://db.everkinetic.com/exercise/balance-board",
       "primer": "Your calves are stabilizing muscles for your legs, so this exercises uses a Balance Board or wobble board to force you to balance.",
-      "type": "compound",
+      "style": "compound",
       "primary": "calves",
       "secondary": [
         "quadriceps",
@@ -8691,7 +8691,7 @@
       "title": "Seated Calf Raise with Barbell",
       "url": "http://db.everkinetic.com/exercise/seated-calf-raise-with-barbell",
       "primer": "This version of a calves raise uses a block and a barbell.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "barbell"
@@ -8718,7 +8718,7 @@
       "title": "Calves Press on Leg Machine",
       "url": "http://db.everkinetic.com/exercise/calves-press-on-leg-machine",
       "primer": "This exercise uses a Leg Press Machine to work your calves.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "machine"
@@ -8748,7 +8748,7 @@
       "title": "Calf Raises with Band",
       "url": "http://db.everkinetic.com/exercise/calf-raises-with-band",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "bands"
@@ -8774,7 +8774,7 @@
       "title": "Donkey Calf Raises",
       "url": "http://db.everkinetic.com/exercise/donkey-calf-raises",
       "primer": "This is an old school gym exercise which requires the assistance of another person.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "body"
@@ -8804,7 +8804,7 @@
       "title": "Seated One Leg Calf Raise with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/seated-one-leg-calf-raise-with-dumbbell",
       "primer": "This version of a calf raise allows you to exercise each leg individually.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "dumbbell"
@@ -8830,7 +8830,7 @@
       "title": "Knee Circles",
       "url": "http://db.everkinetic.com/exercise/knee-circles",
       "primer": "This is a simple exercise and a great stretch.",
-      "type": "compound",
+      "style": "compound",
       "primary": "calves",
       "secondary": [
         "hamstrings"
@@ -8857,7 +8857,7 @@
       "title": "Rocking Standing Calf Raise with Barbell",
       "url": "http://db.everkinetic.com/exercise/rocking-standing-calf-raise-with-barbell",
       "primer": "This exercise uses a simple rocking motion to strengthen the calves.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "barbell"
@@ -8886,7 +8886,7 @@
       "title": "Seated Calf Raise using Machine",
       "url": "http://db.everkinetic.com/exercise/seated-calf-raise-using-machine",
       "primer": "This is one of the simplest and most effective exercises for the calves.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "machine"
@@ -8913,7 +8913,7 @@
       "title": "Smith Machine Reverse Calf Raises",
       "url": "http://db.everkinetic.com/exercise/smith-machine-reverse-calf-raises",
       "primer": "This is a unique exercise that works the tibialis anterior muscle, one of the muscles of the calves.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "smith machine"
@@ -8942,7 +8942,7 @@
       "title": "Standing Barbell Calf Raise",
       "url": "http://db.everkinetic.com/exercise/standing-barbell-calf-raise",
       "primer": "This is standing version of a Calf Raise.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "barbell"
@@ -8970,7 +8970,7 @@
       "title": "Standing Calf Raises using Machine",
       "url": "http://db.everkinetic.com/exercise/standing-calf-raises-using-machine",
       "primer": "This exercise uses a machine to allow for proper form.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "machine"
@@ -8998,7 +8998,7 @@
       "title": "Standing Calf Raise with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/standing-calf-raise-with-dumbbell",
       "primer": "This version of a Calf Raise uses dumbbells.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "calves",
       "equipment": [
         "dumbbell"
@@ -9020,7 +9020,7 @@
       "title": "Air Bike",
       "url": "http://db.everkinetic.com/exercise/air-bike",
       "primer": "This exercise works your abs by raising your arms to meet your legs.",
-      "type": "compound",
+      "style": "compound",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9052,7 +9052,7 @@
       "title": "Ab Rollout with Barbell",
       "url": "http://db.everkinetic.com/exercise/ab-rollout-with-barbell",
       "primer": "This exercise works the abs and lower back and is the proper version of an “ab roller”.",
-      "type": "compound",
+      "style": "compound",
       "primary": "abdominals",
       "secondary": [
         "lower back",
@@ -9083,7 +9083,7 @@
       "title": "Ab Rollout on Knees with Barbell",
       "url": "http://db.everkinetic.com/exercise/ab-rollout-on-knees-with-barbell",
       "primer": "This exercise works the abs and lower back and is the proper version of an “ab roller”.",
-      "type": "compound",
+      "style": "compound",
       "primary": "abdominals",
       "secondary": [
         "lower back",
@@ -9117,7 +9117,7 @@
       "title": "Bent Knee Hip Raise",
       "url": "http://db.everkinetic.com/exercise/bent-knee-hip-raise",
       "primer": "This is a good exercise core muscle development.",
-      "type": "compound",
+      "style": "compound",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9145,7 +9145,7 @@
       "title": "Seated Ab Crunch with Cable",
       "url": "http://db.everkinetic.com/exercise/seated-ab-crunch-with-cable",
       "primer": "This exercise uses the weight of a cable machine to assist in a crunch.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "abdominals",
       "equipment": [
         "cable"
@@ -9175,7 +9175,7 @@
       "title": "Cross Body Crunch",
       "url": "http://db.everkinetic.com/exercise/cross-body-crunch",
       "primer": "This version of the crunch works both the upper and lower portion of the abs.",
-      "type": "compound",
+      "style": "compound",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9201,7 +9201,7 @@
       "title": "Crunches with Legs on Stability Ball",
       "url": "http://db.everkinetic.com/exercise/crunches-with-legs-on-stability-ball",
       "primer": "This exercise uses a Stability Ball as the base during your crunches.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "abdominals",
       "equipment": [
         "stability ball"
@@ -9230,7 +9230,7 @@
       "title": "Crunches",
       "url": "http://db.everkinetic.com/exercise/crunches",
       "primer": "",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9260,7 +9260,7 @@
       "title": "Decline Crunch",
       "url": "http://db.everkinetic.com/exercise/decline-crunch",
       "primer": "Using a decline crunch allows you keep your legs steady and isolate all of the abdominal muscles.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9287,7 +9287,7 @@
       "title": "Decline Oblique Crunch",
       "url": "http://db.everkinetic.com/exercise/decline-oblique-crunch",
       "primer": "This version of a decline crunch isolates the oblique muscles of the abs.",
-      "type": "compound",
+      "style": "compound",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9315,7 +9315,7 @@
       "title": "Side Bend with Dumbbell",
       "url": "http://db.everkinetic.com/exercise/side-bend-with-dumbbell",
       "primer": "This exercise works the obliques, the muscles on the sides of your abs.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "abdominals",
       "equipment": [
         "dumbbell"
@@ -9344,7 +9344,7 @@
       "title": "Stability Ball Abdominal Crunch",
       "url": "http://db.everkinetic.com/exercise/stability-ball-abdominal-crunch",
       "primer": "This crunch uses a Stability Ball.",
-      "type": "isolation",
+      "style": "isolation",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9372,7 +9372,7 @@
       "title": "Exercise Ball Pull In",
       "url": "http://db.everkinetic.com/exercise/exercise-ball-pull-in",
       "primer": "This exercise uses a ball to isolate and work the lower abdominal muscles.",
-      "type": "compound",
+      "style": "compound",
       "primary": "abdominals",
       "equipment": [
         "body"
@@ -9398,7 +9398,7 @@
       "title": "Bent Over Row with Barbell",
       "url": "http://db.everkinetic.com/exercise/bent-over-row-with-barbell",
       "primer": "This exercise focuses on the middle back.",
-      "type": "compound",
+      "style": "compound",
       "primary": "middle back",
       "secondary": [
         "biceps"

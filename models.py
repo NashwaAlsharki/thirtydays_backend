@@ -74,7 +74,7 @@ class UpdateChallengeModel(BaseModel):
         json_encoders = {ObjectId: str}
 
 # create excercise model
-class ExcerciseModel(BaseModel):
+class ExerciseModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
     title: str
     primer: str
