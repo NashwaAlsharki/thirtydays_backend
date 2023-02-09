@@ -42,7 +42,7 @@ class ExerciseModel(BaseModel):
 # create day model
 class DayModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    day: int
+    order: int
     title: str
     exercises: list[dict]
 
@@ -53,7 +53,7 @@ class DayModel(BaseModel):
 
 
 class UpdateDayModel(BaseModel):
-    day: int
+    order: int
     title: str
     exercises: list[dict]
 

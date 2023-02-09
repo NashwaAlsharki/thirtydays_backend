@@ -61,7 +61,7 @@ async def filter_excercises(muscle: str = None):
 
     raise HTTPException(status_code=404, detail="No excercises found")
 
-# get a single excercise
+# get an excercise
 @app.get("/exercises/{id}", response_description="Get a single excercise", response_model=ExerciseModel)
 async def show_excercise(id: str):
     if (excercise := await exercises_db.find_one({"_id": id})):
@@ -112,12 +112,34 @@ async def delete_challenge(id: str):
 
 # --------------  day  routes --------------- #
 
-# create a day with exercises and add to challenge
-@app.post("/challenges/{id}/day", response_description="Create a new day", response_model=DayModel)
-async def create_day(id: str, day: DayModel = Body(...)):
+# create a day
+@app.patch("/challenges/{id}/day", response_description="Create a new day")
+async def create_day(id: str, day: dict):
+    challenge = await challenges_db.find_one({"_id": id})
     day = jsonable_encoder(day)
+    day["_id"] = len(challenge["days"]) + 1
     update_challenge = await challenges_db.update_one({"_id": id}, {"$push": {"days": day}})
     if update_challenge.modified_count == 1:
         return {"message": "Day added successfully"}
 
     raise HTTPException(status_code=500, detail="An error occurred")
+
+# get a day
+@app.get("/challenges/{id}/day/{day_id}", response_description="Get a single day")
+async def show_day(id: str, day_id: int):
+    challenge = await challenges_db.find_one({"_id": id})
+    for day in challenge["days"]:
+        if day["_id"] == day_id:
+            return day
+
+    raise HTTPException(status_code=500, detail="An error occurred")
+
+# delete a day
+@app.delete("/challenges/{id}/day/{day_id}", response_description="Delete a day")
+async def delete_day(id: str, day_id: int):
+    challenge = await challenges_db.find_one({"_id": id})
+    for day in challenge["days"]:
+        if day["_id"] == day_id:
+            update_challenge = await challenges_db.update_one({"_id": id}, {"$pull": {"days": day}})
+            if update_challenge.modified_count == 1:
+                return {"message": "Day deleted successfully"}
