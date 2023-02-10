@@ -21,12 +21,12 @@ class PyObjectId(ObjectId):
 # create user model
 class UserModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    username: str
+    created_at: datetime = Field(default_factory=datetime.utcnow)
     email: str
     password: str
-    created_challenges: [ChallengeModel] = []
-    joined_challenges: [ChallengeModel] = []
-    created_at: datetime = Field(default_factory=datetime.utcnow)
+    username: str
+    created_challenges: []
+    joined_challenges: []
 
     class Config:
         allow_population_by_field_name = True
@@ -34,19 +34,18 @@ class UserModel(BaseModel):
         json_encoders = {ObjectId: str}
 
 class UpdateUserModel(BaseModel):
-    username: str
     email: str
     password: str
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-
+    username: str
+    created_challenges: []
+    joined_challenges: []
+    
     class Config:
         allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
 
 # create excercise model
-
-
 class ExerciseModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
     title: str
@@ -65,18 +64,18 @@ class ExerciseModel(BaseModel):
         json_encoders = {ObjectId: str}
 
 # create challenge model
-
-
 class ChallengeModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    created_by: UserModel
+    original_id: id
+    created_by: str
+    created_at: datetime = Field(default_factory=datetime.utcnow)
     title: str
     description: str
     image_url: str
     categories: list[str]
     duration: int
     days: list
-    joiners: [UserModel]
+    joiners: []
 
     class Config:
         allow_population_by_field_name = True
@@ -85,14 +84,13 @@ class ChallengeModel(BaseModel):
 
 
 class UpdateChallengeModel(BaseModel):
-    created_by: UserModel
     title: str
     description: str
     image_url: str
     categories: list[str]
     duration: int
     days: list
-    joiners: [UserModel]
+    joiners: []
 
     class Config:
         allow_population_by_field_name = True
