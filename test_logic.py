@@ -1,13 +1,27 @@
 import json
-
 f = open('exercises.json')
 data = json.load(f)
-base_url = 'https://raw.githubusercontent.com/everkinetic/data/main/src/images-web/'
+
+# understand exercise data
+def understand():
+    counts = {'title': 0, 'primer': 0, 'style': 0, 'primary': 0, 'secondary': 0, 'equipment': 0, 'steps': 0, 'tips': 0, 'img': 0, 'img_count': {0: 0, 1: 0, 2:0, 3:0, 4:0}}
+
+    for item in data:
+        for key in counts:
+            if key in item:
+                counts[key] += 1
+                if key == 'img':
+                    counts['img_count'][len(item[key])] += 1
+    
+    print(counts)
+
+understand()
 
 
-@app.post('/upload')
-async def upload():
+# create excercise model and add to database
+def upload():
     to_add = []
+    base_url = 'https://raw.githubusercontent.com/everkinetic/data/main/src/images-web/'
     for item in data:
         d ={ 'title': '', 'primer': '', 'style': '', 'primary': '', 'secondary': [], 'equipment': [], 'steps': [], 'tips': [], 'img': []}
         for key in d:
@@ -30,9 +44,4 @@ async def upload():
             tips=d['tips'],
             image_urls=image_urls
         )
-
-        exercise = jsonable_encoder(exercise)
         to_add.append(exercise)
-
-    added = await exercises_db.insert_many(to_add)
-    return {"message": f"added all {len(to_add)} exercises"}

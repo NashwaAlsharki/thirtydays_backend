@@ -11,6 +11,7 @@ client = AsyncIOMotorClient(MONGODB_URI)
 db = client.ThirtyDays
 challenges_db = db["Challenges"]
 exercises_db = db["Exercises"]
+users_db = db["Users"]
 
 # ---------- create FASTAPI app ---------- #
 app = FastAPI()

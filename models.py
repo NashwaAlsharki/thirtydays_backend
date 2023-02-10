@@ -18,6 +18,32 @@ class PyObjectId(ObjectId):
     def __modify_schema__(cls, field_schema):
         field_schema.update(type='string')
 
+# create user model
+class UserModel(BaseModel):
+    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
+    username: str
+    email: str
+    password: str
+    created_challenges: [ChallengeModel] = []
+    joined_challenges: [ChallengeModel] = []
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+    class Config:
+        allow_population_by_field_name = True
+        arbitrary_types_allowed = True
+        json_encoders = {ObjectId: str}
+
+class UpdateUserModel(BaseModel):
+    username: str
+    email: str
+    password: str
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+    class Config:
+        allow_population_by_field_name = True
+        arbitrary_types_allowed = True
+        json_encoders = {ObjectId: str}
+
 # create excercise model
 
 
@@ -38,43 +64,19 @@ class ExerciseModel(BaseModel):
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
 
-
-# create day model
-class DayModel(BaseModel):
-    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    order: int
-    title: str
-    exercises: list[dict]
-
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
-
-
-class UpdateDayModel(BaseModel):
-    order: int
-    title: str
-    exercises: list[dict]
-
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
-
 # create challenge model
 
 
 class ChallengeModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    created_by: str
+    created_by: UserModel
     title: str
     description: str
     image_url: str
     categories: list[str]
     duration: int
-    days: list[DayModel]
-    joiners: int
+    days: list
+    joiners: [UserModel]
 
     class Config:
         allow_population_by_field_name = True
@@ -83,14 +85,14 @@ class ChallengeModel(BaseModel):
 
 
 class UpdateChallengeModel(BaseModel):
-    created_by: str
+    created_by: UserModel
     title: str
     description: str
     image_url: str
     categories: list[str]
     duration: int
-    days: list[DayModel]
-    joiners: int
+    days: list
+    joiners: [UserModel]
 
     class Config:
         allow_population_by_field_name = True
