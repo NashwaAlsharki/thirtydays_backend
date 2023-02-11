@@ -15,9 +15,6 @@ def understand():
     
     print(counts)
 
-understand()
-
-
 # create excercise model and add to database
 def upload():
     to_add = []
@@ -45,3 +42,5 @@ def upload():
             image_urls=image_urls
         )
         to_add.append(exercise)
+
+

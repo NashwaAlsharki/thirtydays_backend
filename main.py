@@ -1,20 +1,16 @@
-from motor.motor_asyncio import AsyncIOMotorClient
+import users, challenges, days, exercises
 from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
-from fastapi import FastAPI
-import os
+from fastapi import FastAPI, APIRouter
 
-# ---------- connect to mongo database ---------- #
-load_dotenv()
-MONGODB_URI = os.environ.get('MONGODB_URI')
-client = AsyncIOMotorClient(MONGODB_URI)
-db = client.ThirtyDays
-challenges_db = db["Challenges"]
-exercises_db = db["Exercises"]
-users_db = db["Users"]
 
-# ---------- create FASTAPI app ---------- #
+# ---------- configure FASTAPI app ---------- #
+
 app = FastAPI()
+
+app.include_router(users.router)
+app.include_router(challenges.router)
+app.include_router(days.router)
+app.include_router(exercises.router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -23,3 +19,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# -------------- root message -------------- #
+
+@app.get("/")
+async def success_message():
+    return {"message": "Welcome to Thirty Days!"}
