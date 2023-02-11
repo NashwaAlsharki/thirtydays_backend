@@ -14,15 +14,21 @@ def success_message():
 # -------------- user routes --------------- #
 
 # signup a new user
-@app.post("users/signup", response_description="Signup a new user", response_model=UserModel)
+@app.post("/users/signup", response_description="Signup a new user", response_model=UserModel)
 async def signup_user(user: UserModel = Body(...)):
     user = jsonable_encoder(user)
-    new_user = await users_db.insert_one(user)
-    created_user = await users_db.find_one({"_id": new_user.inserted_id})
-    return JSONResponse(status_code=status.HTTP_201_CREATED, content=created_user)
+    if (found_user := await users_db.find_one({"email": user["email"]})):
+        raise HTTPException(status_code=400, detail="User already exists")
+    else:
+        new_user = await users_db.insert_one(user)
+    if (created_user := await users_db.find_one({"_id": new_user.inserted_id})):
+        return JSONResponse(status_code=status.HTTP_201_CREATED, content=created_user)
+
+    raise HTTPException(status_code=500, detail="Something went wrong")
+
 
 # login a user
-@app.post("users/login", response_description="Login a user", response_model=UserModel)
+@app.post("/users/login", response_description="Login a user", response_model=UserModel)
 async def login_user(user: UserModel = Body(...)):
     user = jsonable_encoder(user)
     if (found_user := await users_db.find_one({"email": user["email"]})):
@@ -81,8 +87,9 @@ async def join_challenge(id: str, user_id: str):
 async def create_challenge(challenge: ChallengeModel = Body(...)):
     challenge = jsonable_encoder(challenge)
     new_challenge = await challenges_db.insert_one(challenge)
-    created_challenge = await challenges_db.find_one({"_id": new_challenge.inserted_id})
-    if (await users_db.update_one({"_id": challenge["creator"]}, {"$push": {"createdChallenges": challenge["_id"]}})):
+    challenge_id = new_challenge.inserted_id
+    update_challenge = await challenges_db.update_one({"_id": challenge_id}, {"$set": {"original_id": challenge_id}})
+    if (await users_db.update_one({"_id": challenge["creator"]}, {"$push": {"createdChallenges": challenge_id}})):
         return JSONResponse(status_code=status.HTTP_201_CREATED, content=created_challenge)
 
     raise HTTPException(status_code=500, detail="Something went wrong")

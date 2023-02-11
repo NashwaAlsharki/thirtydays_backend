@@ -1,21 +1,22 @@
 from pydantic import BaseModel, Field
 from datetime import datetime
 from bson import ObjectId
+from typing import Any, Dict, Type
 
 
-class PyObjectId(ObjectId):
+class PyObjectId(Type[ObjectId]):
     @classmethod
-    def __get_validators__(cls):
+    def __get_validators__(cls) -> Generator:
         yield cls.validate
 
     @classmethod
-    def validate(cls, v):
+    def validate(cls, v: Any) -> ObjectId:
         if not ObjectId.is_valid(v):
             raise ValueError('Invalid object id')
         return ObjectId(v)
 
     @classmethod
-    def __modify_schema__(cls, field_schema):
+    def __modify_schema__(cls, field_schema: Dict[str, Any]) -> None:
         field_schema.update(type='string')
 
 # create user model
@@ -24,9 +25,9 @@ class UserModel(BaseModel):
     created_at: datetime = Field(default_factory=datetime.utcnow)
     email: str
     password: str
-    username: str
-    created_challenges: []
-    joined_challenges: []
+    username: str = None
+    created_challenges: list[str] = []
+    joined_challenges: list[str] = []
 
     class Config:
         allow_population_by_field_name = True
@@ -36,9 +37,9 @@ class UserModel(BaseModel):
 class UpdateUserModel(BaseModel):
     email: str
     password: str
-    username: str
-    created_challenges: []
-    joined_challenges: []
+    username: str = None
+    created_challenges: list[str] = []
+    joined_challenges: list[str] = []
     
     class Config:
         allow_population_by_field_name = True
@@ -66,7 +67,7 @@ class ExerciseModel(BaseModel):
 # create challenge model
 class ChallengeModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    original_id: id
+    original_id: str
     created_by: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
     title: str
@@ -75,7 +76,7 @@ class ChallengeModel(BaseModel):
     categories: list[str]
     duration: int
     days: list
-    joiners: []
+    joiners: list[str]
 
     class Config:
         allow_population_by_field_name = True
@@ -90,7 +91,7 @@ class UpdateChallengeModel(BaseModel):
     categories: list[str]
     duration: int
     days: list
-    joiners: []
+    joiners: list[str]
 
     class Config:
         allow_population_by_field_name = True
