@@ -6,17 +6,17 @@ from typing import Any, Dict, Type
 
 class PyObjectId(Type[ObjectId]):
     @classmethod
-    def __get_validators__(cls) -> Generator:
+    def __get_validators__(cls):
         yield cls.validate
 
     @classmethod
-    def validate(cls, v: Any) -> ObjectId:
+    def validate(cls, v: Any):
         if not ObjectId.is_valid(v):
             raise ValueError('Invalid object id')
         return ObjectId(v)
 
     @classmethod
-    def __modify_schema__(cls, field_schema: Dict[str, Any]) -> None:
+    def __modify_schema__(cls, field_schema: Dict[str, Any]):
         field_schema.update(type='string')
 
 # create user model
