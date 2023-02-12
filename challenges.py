@@ -1,4 +1,4 @@
-from ChallengeModel import ChallengeModel, UpdateChallengeModel
+from ChallengeModel import ChallengeModel, UpdateChallengeModel, CopiedChallengeModel
 from fastapi import status, HTTPException, APIRouter
 from db_connection import users_db, challenges_db
 from fastapi.encoders import jsonable_encoder
@@ -38,12 +38,42 @@ async def create_challenge(challenge: ChallengeModel):
     challenge = jsonable_encoder(challenge)
     new_challenge = await challenges_db.insert_one(challenge)
     
-    challenge_id = new_challenge.inserted_id
-    update_challenge = await challenges_db.update_one({"_id": challenge_id}, {"$set": {"original_id": challenge_id}})
-    
-    await users_db.update_one({"_id": challenge["creator"]}, {"$push": {"createdChallenges": challenge_id}})
-    
+    created_challenge = await challenges_db.find_one({"_id": new_challenge.inserted_id})
+        
+    await users_db.update_one({"_id": challenge["created_by"]}, {"$push": {"created_challenges": created_challenge["_id"]}})
+        
     return JSONResponse(status_code=status.HTTP_201_CREATED, content=created_challenge)
+    
+# add user to challenge joiners
+@router.patch("/challenges/{id}/join/{user_id}")
+async def join_challenge(id: str, user_id: str):
+    challenge = await challenges_db.find_one({"_id": id})
+    
+    if user_id in challenge["joiners"]:
+        raise HTTPException(status_code=400, detail="You have already joined this challenge")
+    
+    # copy challenge and add to user's joined challenges
+    duplicate_challenge = CopiedChallengeModel (
+        original_id = challenge["_id"],
+        created_by = challenge["created_by"],
+        joined_by = user_id,
+        title = challenge["title"],
+        description = challenge["description"],
+        duration = challenge["duration"],
+        categories = challenge["categories"],
+        image_url = challenge["image_url"],
+        days = challenge["days"],
+    )
+
+    duplicate_challenge = jsonable_encoder(duplicate_challenge)
+    
+    user_copy = await challenges_db.insert_one(duplicate_challenge)
+    await users_db.update_one({"_id": user_id}, {"$push": {"joined_challenges": user_copy.inserted_id}})
+
+    # add user to challenge joiners
+    await challenges_db.update_one({"_id": id}, {"$push": {"joiners": user_id}})
+
+    return JSONResponse(status_code=status.HTTP_200_OK, content={"message": "Joined challenge successfully"})
 
 # update a challenge (not properly tested)
 @router.put("/challenges/{id}", response_model=ChallengeModel)

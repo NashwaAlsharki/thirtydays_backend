@@ -10,9 +10,9 @@ class UserModel(BaseModel):
     created_at: datetime = Field(default_factory=datetime.utcnow)
     email: EmailStr = Field(...)
     password: str = Field(...)
-    username: Optional[str] = Field(default_factory="Friend")
-    created_challenges: Optional[list] = Field(default_factory=[])
-    joined_challenges: Optional[list] = Field(default_factory=[])
+    username: str = "Friend"
+    created_challenges: list[str] = []
+    joined_challenges: list[str] = []
 
     class Config:
         allow_population_by_field_name = True

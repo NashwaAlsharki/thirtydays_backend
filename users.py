@@ -33,6 +33,15 @@ async def login_user(details: dict):
 
     raise HTTPException(status_code=404, detail="User not found")
 
+# update user details (not tested)
+@router.put("/users/{id}", response_model=UpdateUserModel)
+async def update_user(id: str, user: UpdateUserModel):
+    user = {k: v for k, v in user.dict().items() if v}
+    if len(user) >= 1:
+        update_user(id, user)
+        if (updated_user := await users_db.find_one({"_id": id})):
+            return updated_user
+
 
 # get user details
 @router.get("/users/{id}", response_model=UserModel)
@@ -42,15 +51,3 @@ async def get_user(id: str):
         return JSONResponse(status_code=status.HTTP_200_OK, content=user)
 
     raise HTTPException(status_code=404, detail="User not found")
-
-# add challenge to user joined challenges
-@router.patch("/challenges/{id}/join/{user_id}")
-async def join_challenge(id: str, user_id: str):
-    challenge = challenges_db.update_one(
-        {"_id": id}, {"$push": {"joiners": user_id}})
-    
-    copied_challenge = challenge.copy()
-    if (added_challenge := await users_db.update_one({"_id": user_id}, {"$push": {"joinedChallenges": copied_challenge["_id"]}})):
-        return JSONResponse(status_code=status.HTTP_200_OK, content={"message": "Joined challenge successfully"})
-
-    raise HTTPException(status_code=500, detail="Something went wrong")
