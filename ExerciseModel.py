@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from object_id import PyObjectId
+from object_id import PyObjectId, ObjectId
 
 
 # create excercise model
@@ -18,4 +18,4 @@ class ExerciseModel(BaseModel):
     class Config:
         allow_population_by_field_name = True
         arbitrary_types_allowed = True
-        json_encoders = {PyObjectId: str}
+        json_encoders = {ObjectId: str}
