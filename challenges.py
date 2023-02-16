@@ -10,7 +10,7 @@ router = APIRouter()
 # get all challenges or filter by keyword, category, duration, or all three
 @router.get("/challenges", response_model=List[ChallengeModel])
 async def list_challenges(keywords: str = None, duration: int = None, category: str = None):
-    query = {}
+    query = {"original_id": ""}
     if keywords:
         query = {"$or": [{"title": {"$regex": keyword, "$options": "i"}}, {
             "description": {"$regex": keyword, "$options": "i"}}]}
@@ -51,12 +51,16 @@ async def join_challenge(id: str, user_id: str):
     
     if user_id in challenge["joiners"]:
         raise HTTPException(status_code=400, detail="You have already joined this challenge")
+
+    # add user to challenge joiners
+    await challenges_db.update_one({"_id": id}, {"$push": {"joiners": user_id}})
     
     # copy challenge and add to user's joined challenges
     duplicate_challenge = CopiedChallengeModel (
         original_id = challenge["_id"],
         created_by = challenge["created_by"],
         joined_by = user_id,
+        joiners = challenge["joiners"],
         title = challenge["title"],
         description = challenge["description"],
         duration = challenge["duration"],
@@ -69,9 +73,6 @@ async def join_challenge(id: str, user_id: str):
     
     user_copy = await challenges_db.insert_one(duplicate_challenge)
     await users_db.update_one({"_id": user_id}, {"$push": {"joined_challenges": user_copy.inserted_id}})
-
-    # add user to challenge joiners
-    await challenges_db.update_one({"_id": id}, {"$push": {"joiners": user_id}})
 
     return JSONResponse(status_code=status.HTTP_200_OK, content={"message": "Joined challenge successfully"})
 

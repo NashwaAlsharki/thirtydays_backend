@@ -15,7 +15,7 @@ class ChallengeModel(BaseModel):
     image_url: str = "https://images.pexels.com/photos/3755440/pexels-photo-3755440.jpeg?auto=compress&cs=tinysrgb&w=600"
     categories: list[str] = []
     duration: int = 0
-    days: list[dict] = []
+    days: list[dict] = [{"number": 1, "description": "", "completed": False, "exercises": []}]
     joiners: list[str] = []
 
     class Config:
@@ -42,6 +42,7 @@ class UpdateChallengeModel(BaseModel):
 class CopiedChallengeModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
     joined_at: datetime = Field(default_factory=datetime.utcnow)
+    joiners: list[str] = []
     original_id: str = Field(...)
     created_by: str = Field(...)
     joined_by: str = Field(...)

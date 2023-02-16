@@ -42,7 +42,7 @@ async def toggle_day(id: str, day_id: int):
     challenge = await challenges_db.find_one({"_id": id})
     for day in challenge["days"]:
         if day["number"] == day_id:
-            update_day = await challenges_db.update_one({"_id": id, "days.number": day_id}, {"$set": {"days.$.completed": not day["completed"]}, "$inc": {"completion_percent": (1/day["number"]) if not day["completed"] else -(1/day["number"])}})
+            update_day = await challenges_db.update_one({"_id": id, "days.number": day_id}, {"$set": {"days.$.completed": not day["completed"]}, "$set": {"completion_percent": (day["number"] / challenge["duration"]) * 100}})
             
             return {"message": "Day updated successfully"}
 

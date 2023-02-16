@@ -15,7 +15,7 @@ def understand():
     
     print(counts)
 
-# create excercise model and add to database
+# create excercise model to add to database
 def upload():
     to_add = []
     base_url = 'https://raw.githubusercontent.com/everkinetic/data/main/src/images-web/'
@@ -42,5 +42,20 @@ def upload():
             image_urls=image_urls
         )
         to_add.append(exercise)
+
+    print(f'Ready to upload all {len(to_add)} exercises')
+
+# see what muscle groups are in the data
+def muscles():
+    muscles = set()
+    for item in data:
+        if 'primary' in item:
+            muscles.add(item['primary'])
+        if 'secondary' in item:
+            for muscle in item['secondary']:
+                muscles.add(muscle)
+    print(muscles)
+
+muscles()
 
 
