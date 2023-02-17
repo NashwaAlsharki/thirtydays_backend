@@ -1,6 +1,6 @@
-from ChallengeModel import ChallengeModel, UpdateChallengeModel, CopiedChallengeModel
+from ..models.ChallengeModel import ChallengeModel, UpdateChallengeModel, CopiedChallengeModel
 from fastapi import status, HTTPException, APIRouter
-from db_connection import users_db, challenges_db
+from ..db_connection import users_db, challenges_db
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from typing import List

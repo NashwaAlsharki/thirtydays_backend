@@ -1,7 +1,7 @@
 from fastapi import HTTPException, APIRouter
 from fastapi.responses import JSONResponse
-from ExerciseModel import ExerciseModel
-from db_connection import exercises_db
+from ..models.ExerciseModel import ExerciseModel
+from ..db_connection import exercises_db
 from typing import List
 
 router = APIRouter()

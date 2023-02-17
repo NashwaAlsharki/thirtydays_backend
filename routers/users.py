@@ -1,7 +1,7 @@
 from fastapi import status, HTTPException, APIRouter
-from UserModel import UserModel, UpdateUserModel
-from ChallengeModel import ChallengeModel, CopiedChallengeModel
-from db_connection import users_db, challenges_db
+from ..models.UserModel import UserModel, UpdateUserModel
+from ..models.ChallengeModel import ChallengeModel, CopiedChallengeModel
+from ..db_connection import users_db, challenges_db
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from bson.objectid import ObjectId

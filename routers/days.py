@@ -1,7 +1,7 @@
-from db_connection import challenges_db, users_db, exercises_db
+from ..db_connection import challenges_db, users_db, exercises_db
 from fastapi.encoders import jsonable_encoder
 from fastapi import HTTPException, APIRouter
-from DayModel import DayModel
+from ..models.DayModel import DayModel
 
 router = APIRouter()
 
@@ -42,11 +42,11 @@ async def toggle_day(id: str, day_id: int):
     challenge = await challenges_db.find_one({"_id": id})
     for day in challenge["days"]:
         if day["number"] == day_id:
-            update_day = await challenges_db.update_one({"_id": id, "days.number": day_id}, {"$set": {"days.$.completed": not day["completed"]}, "$set": {"completion_percent": (day["number"] / challenge["duration"]) * 100}})
-            
-            return {"message": "Day updated successfully"}
-
-    raise HTTPException(status_code=404, detail="Day not found")
+            update_day = await challenges_db.update_one({"_id": id, "days.number": day_id}, {"$set": {"days.$.completed": not day["completed"]}})
+    
+    update_progress = await challenges_db.update_one({"_id": id}, {"$set": {"completion_percent": day_id/challenge["duration"] * 100}})
+    
+    return {"message": "Day updated successfully"}
 
 # delete a day (not properly tested)
 @router.delete("/challenges/{id}/days/{day_id}", response_model = DayModel)
