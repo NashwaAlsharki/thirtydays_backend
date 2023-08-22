@@ -8,7 +8,7 @@ Python 3.8 or newer installed.
 ## Setup & Installation
 1. Clone the Repository:
 ```
-git clone <repository-link> thirtydays_backend
+git clone https://github.com/NashwaAlsharki/thirtydays_backend.git
 cd thirty-days-backend
 ```
 
